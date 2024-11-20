@@ -1,215 +1,227 @@
-/* General Styling */
-/* Order : body, title h1-h4, p and footer */
-
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f2f2f2;
-    color: #333;
-    text-align: center;
+/* General Reset */
+* {
     margin: 0;
     padding: 0;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
-h1, h2, h3, h4 {
-    font-family: 'Merriweather', serif;
-    color: #b11226;
-}
-
-p {
-    color: #555;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  body {
+    background-color: #f2f2f2; /* Light grey for the body background */
+    color: #333333; /* Dark grey for text */
     line-height: 1.6;
-}
-
-
-footer {
-    background: linear-gradient(to right, #3b3b3b, #333333);
-    color: #ffffff;
-    padding: 1rem;
-    text-align: center;
-    font-size: 0.875rem;
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
-    margin-top: auto; /* Pushes footer to the bottom */
-}
-
-footer p {
-    margin: 0;
-    color: #ffffff;
-    font-size: 0.9rem;
-}
-
-
-
-
-/* classes */
-/* Order : nav, header, features, feature-card */
-
-.navbar {
-    background: linear-gradient(135deg, #3a3a3a, #1a1a1a); /* Gradient background */
-    padding: 1rem 2rem;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
+  }
+  
+  /* Header Styles */
+  .header {
+    background-color: #000000; /* Black for the header */
+    color: #ffffff; /* White text for contrast */
+    padding: 10px 20px;
+  }
+  
+  .header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slight shadow */
-}
-
-.navbar .navbar-brand {
-    font-weight: bold;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .header .logo {
     font-size: 1.5rem;
-    color: #ffffff;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.navbar .navbar-brand:hover {
-    color: #ff6961; 
-}
-
-.navbar .navbar-links {
+    font-weight: bold;
+    color: #ffffff; /* White for the logo */
+  }
+  
+  .header .nav ul {
     display: flex;
-    gap: 1.5rem;
-}
-
-.nav-link {
-    color: #dcdcdc;
-    font-size: 1.1rem;
-    font-weight: 500;
+    list-style: none;
+    gap: 20px;
+  }
+  
+  .header .nav ul li a {
+    color: #ffffff; /* White for links */
     text-decoration: none;
-    padding: 0.5rem;
-    position: relative;
-    transition: color 0.3s;
-}
-
-.nav-link:hover {
-    color: #ff6961; 
-}
-
-/* Underline animation for links */
-.nav-link::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    width: 0;
-    height: 2px;
-    background-color: #ff6961;
-    transition: width 0.3s;
-}
-
-.nav-link:hover::after {
-    width: 100%; /* Underline animation for links */
-}
-
-
-
-
-.header {
-    background-color: #4b7a55;
-    padding: 2rem 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .header .nav ul li a:hover {
+    color: #cccccc; /* Lighter grey for hover effect */
+  }
+  
+  .header .login {
     color: #ffffff;
-    margin-top: 60px; 
-    position: relative;
-}
-
-
-.header::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-
-.header-content {
-    position: relative;
-    z-index: 2;
-}
-
-.header h1 {
-    color: #ffffff;
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
-}
-
-.header p {
-    color: #ffffff;
-    font-size: 1rem;
-}
-
-
-
-
-.features {
+    text-decoration: none;
+    border: 1px solid #ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .header .login:hover {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  /* Greetings Section */
+  .greetings {
+    background-color: #f2f2f2; /* Light grey background for the greetings section */
+    padding: 40px 20px;
+  }
+  
+  .greetings .container {
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
-    padding: 2rem;
-    justify-content: center;
-}
-
-.feature-card {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 2rem;
-    width: 220px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-align: center;
-}
-
-.feature-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.feature-icon img {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 0.5rem;
-}
-
-.feature-card h2 {
-    font-size: 1.3rem;
-    color: #333;
-}
-
-.feature-card p {
-    font-size: 1rem;
-    color: #666;
-}
-
-
-
-/* Responsive adjustments for larger screens */
-@media (min-width: 1200px) {
-    .feature-card {
-        width: 300px; /* Increase card width */
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .greetings .text-content {
+    flex: 1 1 50%;
+  }
+  
+  .greetings .text-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #000000; /* Black for the heading */
+  }
+  
+  .greetings .text-content p {
+    margin-bottom: 20px;
+    color: #333333; /* Dark grey for paragraph text */
+  }
+  
+  .greetings .button {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #000000; /* Black button */
+    color: #ffffff; /* White text */
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .greetings .button:hover {
+    background-color: #333333; /* Dark grey on hover */
+  }
+  
+  /* Wine Image Styling */
+  .greetings .image-content {
+    display: flex;
+    flex: 1 1 40%;
+    justify-content: flex-end; /* Align images to the right */
+    position: relative; /* Enable overlapping positioning */
+    gap: 15px; /* Space between images */
+  }
+  
+  .greetings .image-content img {
+    max-width: 150px; /* Set consistent width for images */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+  }
+  
+  .greetings .image-content img:nth-child(1) {
+    position: relative;
+    z-index: 3;
+    margin-right: -30px; /* Overlap the second image */
+  }
+  
+  .greetings .image-content img:nth-child(2) {
+    position: relative;
+    z-index: 2;
+    margin-right: -30px; /* Overlap the third image */
+  }
+  
+  .greetings .image-content img:nth-child(3) {
+    position: relative;
+    z-index: 1;
+  }
+  
+  
+  
+  /* About Section */
+  .about {
+    background-color: #f2f2f2; /* Light grey background */
+    padding: 40px 20px;
+  }
+  
+  .about .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .about .image-content {
+    flex: 1 1 50%;
+    text-align: left; /* Align the image to the left */
+  }
+  
+  .about .image-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for the image */
+  }
+  
+  .about .text-content {
+    flex: 1 1 45%;
+    text-align: right; /* Right-aligned text */
+    padding-left: 20px;
+  }
+  
+  .about .text-content h2 {
+    font-size: 2.5rem;
+    font-family: Georgia, serif; /* Georgia font for the heading */
+    color: #000000; /* Black heading color */
+    margin-bottom: 20px;
+  }
+  
+  .about .text-content p {
+    color: #333333; /* Dark grey for paragraph text */
+    margin-bottom: 15px;
+    line-height: 1.8;
+  }
+  
+  
+  
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .greetings .container {
+      flex-direction: column;
     }
-
-    .features {
-        gap: 3rem; /* Increase gap between cards */
+  
+    .greetings .text-content {
+      flex: 1 1 100%;
+      margin-bottom: 20px;
     }
-}
-
-
-/* Responsive adjustments for smaller screens */
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        padding: 1rem;
+  
+    .greetings .image-content {
+      flex: 1 1 100%;
+      justify-content: center;
     }
-
-    .navbar .navbar-links {
-        flex-direction: column;
-        gap: 0.75rem;
+  
+    .greetings .image-content img {
+      margin-right: 0;
     }
-}
+    
+     .about .container {
+      flex-direction: column-reverse;
+      text-align: center; /* Center-align text for smaller screens */
+    }
+  
+    .about .text-content {
+      padding: 0;
+      text-align: center; /* Center-align text */
+    }
+  
+    .about .image-content img {
+      margin-bottom: 20px;
+    }
+  }
+  
