@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Degustify</title>
-  <link rel="stylesheet" href="../static/css/style.css">
+  <link rel="stylesheet" href="../static/css/home-style.css">
 </head>
 <body>
   <!-- Header Section -->
@@ -27,11 +27,10 @@
   <section class="greetings">
     <div class="container">
       <div class="text-content">
-        <h2>Let Us Guide Your Discovery</h2>
+        <h2>Let Us Guide <br> Your Discovery</h2>
         <p>
           Explore what's available to customers in Quebec with curated insights, expert reviews, and pairing suggestions crafted for both enthusiasts and curious beginners. From tracking your tasting journey to uncovering Quebec's finest selections, your flavorful adventure starts here.
         </p>
-        <a href="#learn-more" class="button">Learn more</a>
       </div>
       <div class="image-content">
         <img src="https://i.ibb.co/vjsQBpD/La-matini-ere.png" alt="Wine bottle image 1">
@@ -59,6 +58,62 @@
   </div>
 </section>
   
-  
+<!-- Subscribe Section -->
+<section class="subscribe">
+  <div class="container">
+    <div class="text-content">
+      <h2>Subscribe</h2>
+      <p>
+        Sign up with your email to receive curated insights, wine reviews, pairing tips, and updates on the best selections at SAQ. Be the first to discover hidden gems and explore new flavors, all delivered straight to your inbox.
+      </p>
+      <form id="subscribeForm">
+        <div class="form-group">
+          <input type="text" id="firstName" placeholder="First Name" required>
+          <input type="text" id="lastName" placeholder="Last Name" required>
+        </div>
+        <input type="email" id="email" placeholder="Email Address" required>
+        <button type="submit">Sign up</button>
+      </form>
+    </div>
+    <div class="image-content">
+      <img src="https://i.ibb.co/mRp5Zp6/subscrib.png" alt="Subscription image">
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="footer">
+  <div class="container">
+    <!-- Logo and Éduc'alcool -->
+    <div class="footer-logo">
+      <h2>Degustify</h2>
+      <img src="https://i.ibb.co/RCV6JSx/moderation.png" alt="Éduc'alcool moderation message">
+    </div>
+
+    <!-- Navigation Links -->
+    <div class="footer-links">
+      <h3>Explore</h3>
+      <ul>
+        <li><a href="#red-wines">Red wines</a></li>
+        <li><a href="#white-wines">White wines</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Social Links -->
+    <div class="footer-social">
+      <h3>Follow us</h3>
+      <ul>
+        <li><a href="mailto:info@degustify.com">Email</a></li>
+        <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+        <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
