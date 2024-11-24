@@ -140,7 +140,7 @@ body {
     color: #333333; /* Dark grey for paragraph text */
   }
     
-  /* Vinyard Image Styling */
+  /* Vineyard Image Styling */
   .vineyard .image-content {
     display: flex;
     flex: 1 1 40%;
@@ -172,10 +172,18 @@ body {
     z-index: 1;
   }
 
+    /* Image hover effect */
+    .thumbnail img {
+        transition: transform 0.3s ease; /* Smooth scaling */
+    }
+    .thumbnail img:hover {
+        transform: scale(1.1); /* Slightly enlarge on hover */
+    }
 
 
 
-  /*Vinyard contact section*/
+
+  /*Vineyard contact section*/
   .contact-section {
     max-width: 600px;
     margin: 50px auto;
