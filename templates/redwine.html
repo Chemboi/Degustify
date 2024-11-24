@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Degustify</title>
   <link rel="stylesheet" href="../static/css/redwhite-style.css">
+
+  <link rel="stylesheet" href="../static/css/swiper-bundle.min.css">
+
 </head>
 <body>
   <!-- Header Section -->
@@ -23,8 +26,47 @@
       <a href="#login" class="login">Login</a>
     </div>
   </header>
-  <style> h1 { font-size: 12rem;};</style>
-  <h1>Red Wine</h1>
+
+
+  <main class="main">
+    <section class="home section" id="home">
+      <div class="home_container container grid">
+        <div class="home__data">
+            <style> h1 { font-size: 12rem;};</style>
+            <h1 class="home__title">Red Wine</h1>
+
+            <p class="home__description">
+              Find the best wines across Quebec.
+            </p>
+        </div>
+
+
+        <div class="home__images">
+          <div class="home__swiper swiper">
+              <div class="swiper-wrapper">
+                  <article class="home__article swiper-slide">
+                      <img src="/static/images/les_deux_terre-removebg-preview.png" alt="image" class="home__image">
+                  </article>
+
+                  <article class="home__article swiper-slide">
+                      <img src="/static/images/les_deux_terre-removebg-preview.png" alt="image" class="home__image">                           
+                  </article>
+
+                  <article class="home__article swiper-slide">
+                      <img src="/static/images/les_deux_terre-removebg-preview.png" alt="image" class="home__image">   
+                  </article>
+
+                  <article class="home__article swiper-slide">
+                      <img src="/static/images/les_deux_terre-removebg-preview.png" alt="image" class="home__image">   
+                  </article>
+              </div>       
+            </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
 
   <!-- Greetings Section -->
   <!-- <section class="greetings">
@@ -116,7 +158,7 @@
     </div>
   </div>
 </footer>
-
-<script src="script.js"></script>
+<script src="../static/js/swiper-bundle.min.js"></script>
+<script src="../static/js/scritp.js"></script>
 </body>
 </html>
