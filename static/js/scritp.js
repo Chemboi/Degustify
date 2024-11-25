@@ -37,3 +37,23 @@
 
     }
 });
+
+const swiper = new Swiper('.featured__swiper', {
+  slidesPerView: 3,
+  spaceBetween: -60,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  loop: true,
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+      spaceBetween: -61,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: -61,
+    },
+  },
+});
