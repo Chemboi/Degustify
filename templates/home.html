@@ -1,25 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Degustify</title>
+  <title data-key="title">Degustify</title>
   <link rel="stylesheet" href="../static/css/home-style.css">
 </head>
+
 <body>
+
   <!-- Header Section -->
   <header class="header">
     <div class="container">
-      <h1 class="logo">Degustify</h1>
+      <h1 class="logo" data-key="title">Degustify</h1>
       <nav class="nav">
         <ul>
-          <li><a href="redwine.html">Red Wines</a></li>
-          <li><a href="whitewine.html">White Wines</a></li>
-          <li><a href="vineyards.html">Vineyards</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="redwine.html" data-key="redWine">Vin Rouge</a></li>
+          <li><a href="whitewine.html" data-key="whiteWine">Vin Blanc</a></li>
+          <li><a href="vineyards.html" data-key="vineyards">Vignobles</a></li>
+          <li><a href="#contact" data-key="contact">Contactez-nous</a></li>
         </ul>
       </nav>
-      <a href="#login" class="login">Login</a>
+      <div class="header-actions">
+        <a href="#login" class="login">Login</a>
+        <button id="lang-toggle" class="lang-toggle">Fr</button>
+      </div>
     </div>
   </header>
 
@@ -27,8 +33,8 @@
   <section class="greetings">
     <div class="container">
       <div class="text-content">
-        <h2>Let Us Guide <br> Your Discovery</h2>
-        <p>
+        <h2 data-key="description">Discover the best wines from around the world.</h2>
+        <p data-key="additionalInfo">
           Explore what's available to customers in Quebec with curated insights, expert reviews, and pairing suggestions crafted for both enthusiasts and curious beginners. From tracking your tasting journey to uncovering Quebec's finest selections, your flavorful adventure starts here.
         </p>
       </div>
@@ -40,80 +46,82 @@
     </div>
   </section>
   
-   <!-- about Section -->
+  <!-- About Section -->
   <section class="about">
-  <div class="container">
-    <div class="image-content">
-      <img src="https://i.ibb.co/wNS17hf/toit-raisin.jpg" alt="Grape trellis image">
+    <div class="container">
+      <div class="image-content">
+        <img src="https://i.ibb.co/wNS17hf/toit-raisin.jpg" alt="Grape trellis image">
+      </div>
+      <div class="text-content">
+        <h2 data-key="aboutTitle">More about Degustify</h2>
+        <p data-key="aboutDescription">
+          At Degustify, we are passionate about uncovering hidden gems available at SAQ stores, from affordable treasures to premium selections. Our mission is to deepen your appreciation for wine by providing curated insights, expert reviews, and thoughtful pairing recommendations.
+        </p>
+        <p>
+          Discover the stories behind your favorite bottles, learn about hidden gems, and explore a platform designed for enthusiasts and beginners alike.
+        </p>
+      </div>
     </div>
-    <div class="text-content">
-      <h2>More about Degustify</h2>
-      <p>
-        At Degustify, we are passionate about uncovering hidden gems available at SAQ stores, from affordable treasures to premium selections. Our mission is to deepen your appreciation for wine by providing curated insights, expert reviews, and thoughtful pairing recommendations.
-      </p>
-      <p>
-        Discover the stories behind your favorite bottles, learn about hidden gems, and explore a platform designed for enthusiasts and beginners alike.
-      </p>
-    </div>
-  </div>
-</section>
+  </section>
   
-<!-- Subscribe Section -->
-<section class="subscribe">
-  <div class="container">
-    <div class="text-content">
-      <h2>Subscribe</h2>
-      <p>
-        Sign up with your email to receive curated insights, wine reviews, pairing tips, and updates on the best selections at SAQ. Be the first to discover hidden gems and explore new flavors, all delivered straight to your inbox.
-      </p>
-      <form id="subscribeForm">
-        <div class="form-group">
-          <input type="text" id="firstName" placeholder="First Name" required>
-          <input type="text" id="lastName" placeholder="Last Name" required>
-        </div>
-        <input type="email" id="email" placeholder="Email Address" required>
-        <button type="submit">Sign up</button>
-      </form>
+  <!-- Subscribe Section -->
+  <section class="subscribe">
+    <div class="container">
+      <div class="text-content">
+        <h2 data-key="subscribeTitle">Subscribe</h2>
+        <p data-key="subscribeDescription">
+          Sign up with your email to receive curated insights, wine reviews, pairing tips, and updates on the best selections at SAQ. Be the first to discover hidden gems and explore new flavors, all delivered straight to your inbox.
+        </p>
+        <form id="subscribeForm">
+          <div class="form-group">
+            <input type="text" id="firstName" placeholder="First Name" required>
+            <input type="text" id="lastName" placeholder="Last Name" required>
+          </div>
+          <input type="email" id="email" placeholder="Email Address" required>
+          <button type="submit" data-key="subscribeButton">Sign up</button>
+        </form>
+      </div>
+      <div class="image-content">
+        <img src="https://i.ibb.co/mRp5Zp6/subscrib.png" alt="Subscription image">
+      </div>
     </div>
-    <div class="image-content">
-      <img src="https://i.ibb.co/mRp5Zp6/subscrib.png" alt="Subscription image">
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="container">
+      <!-- Logo and Éduc'alcool -->
+      <div class="footer-logo">
+        <h2 data-key="title">Degustify</h2>
+        <img src="https://i.ibb.co/RCV6JSx/moderation.png" alt="Éduc'alcool moderation message">
+      </div>
+
+      <!-- Navigation Links -->
+      <div class="footer-links">
+        <h3 data-key="explore">Explore</h3>
+        <ul>
+          <li><a href="#red-wines" data-key="redWine">Red Wines</a></li>
+          <li><a href="#white-wines" data-key="whiteWine">White Wines</a></li>
+          <li><a href="vineyards.html" data-key="vineyards">Vineyards</a></li>
+          <li><a href="#contact" data-key="contact">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Social Links -->
+      <div class="footer-social">
+        <h3 data-key="followUs">Follow Us</h3>
+        <ul>
+          <li><a href="mailto:info@degustify.com" data-key="emailUs">Email</a></li>
+          <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+          <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+        </ul>
+      </div>
     </div>
-  </div>
-</section>
+  </footer>
 
-
-
-<footer class="footer">
-  <div class="container">
-    <!-- Logo and Éduc'alcool -->
-    <div class="footer-logo">
-      <h2>Degustify</h2>
-      <img src="https://i.ibb.co/RCV6JSx/moderation.png" alt="Éduc'alcool moderation message">
-    </div>
-
-    <!-- Navigation Links -->
-    <div class="footer-links">
-      <h3>Explore</h3>
-      <ul>
-        <li><a href="#red-wines">Red wines</a></li>
-        <li><a href="#white-wines">White wines</a></li>
-        <li><a href="vineyards.html">Vineyards</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-
-    <!-- Social Links -->
-    <div class="footer-social">
-      <h3>Follow us</h3>
-      <ul>
-        <li><a href="mailto:info@degustify.com">Email</a></li>
-        <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
-        <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
-      </ul>
-    </div>
-  </div>
-</footer>
-
-<script src="script.js"></script>
+  <!-- Scripts -->
+  <script src="../static/js/lang-toggle.js"></script>
+  <script src="../static/js/lang.js"></script>
+  <script src="../static/js/scritp.js"></script>
 </body>
 </html>
