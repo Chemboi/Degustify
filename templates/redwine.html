@@ -6,10 +6,19 @@
   <title>Degustify</title>
   <link rel="stylesheet" href="../static/css/redwhite-style.css">
 
-  <link rel="stylesheet" href="../static/css/swiper-bundle.min.css">
+
+      <!--====================== FAVICON =================-->
+      <link rel="shortcut icon" type="image/x-icon" href="/assests/img/cover1.jpeg" />
+    
+      <!--======================REMIXCONS===================-->
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.css" rel="stylesheet"/>
+      
+      <!--======================CSS SWIPER===================-->
+      <link rel="stylesheet" href="../static/css/swiper-bundle.min.css">
+  
 
 </head>
-<body>
+
   <!-- Header Section -->
   <header class="header">
     <div class="container">
@@ -17,6 +26,7 @@
       <nav class="nav">
         <ul>
           <li><a href="home.html">Home</a></li>
+          <li><a href="redwine.html">Red Wine</a></li>
           <li><a href="whitewine.html">White Wines</a></li>
           <li><a href="vineyards.html">Vineyards</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -25,83 +35,177 @@
       <a href="#login" class="login">Login</a>
     </div>
   </header>
+<body>
+    <!--==========================MAIN==========================-->
+    <main class="main">
+      <!--==========================HOME========================-->
+      <section class="home section" id="home">
+          <div class="home__container container grid">
+              <div class="home__data">
+                  <h1 class="home__title">
+                      Browse & Savour<br>
+                      Your Favorite Local <em>Red</em> Wines
+                  </h1>
+                  <p class="homedescription">
+                    Discover excellent white wines made and 
+                    produced in the region of Quebec. We encourage
+                    you to take advantage of our online retail advantage
+                    delivery options. 
+                  </p>
+                  <a href="#" class="button">Explore Now</a>
+              </div>
 
+              <div class="home__images">
+                  <div class="home__swiper swiper">
+                      <div class="swiper-wrapper">
+                          <article class="home__article swiper-slide">
+                              <img src="../static/images/les_deux_terre-removebg-preview.png" alt="image" class="home__image">
+                          </article>
 
-  <main class="main">
-    <section class="home section" id="home">
-      <div class="home_container container grid">
-        <div class="home__data">
-            <style> h1 { font-size: 12rem;};</style>
-            <h1 class="home__title">Red Wine</h1>
+                          <article class="home__article swiper-slide">
+                              <img src="../static/images/ripasso-removebg-preview.png" alt="image" class="home__image">                           
+                          </article>
 
-            <p class="home__description">
-              Find the best wines across Quebec.
-            </p>
-        </div>
+                          <article class="home__article swiper-slide">
+                              <img src="../static/images/ripasso-removebg-preview.png" alt="image" class="home__image">   
+                          </article>
 
-
-        <div class="home__images">
-          <div class="home__swiper swiper">
-              <div class="swiper-wrapper">
-                  <article class="home__article swiper-slide">
-                      <img src="/static/images/les_deux_terre-removebg-preview.png" alt="image" class="home__image">
-                  </article>
-
-                  <article class="home__article swiper-slide">
-                      <img src="/static/images/les_deux_terre-removebg-preview.png" alt="image" class="home__image">                           
-                  </article>
-
-                  <article class="home__article swiper-slide">
-                      <img src="/static/images/les_deux_terre-removebg-preview.png" alt="image" class="home__image">   
-                  </article>
-
-                  <article class="home__article swiper-slide">
-                      <img src="/static/images/les_deux_terre-removebg-preview.png" alt="image" class="home__image">   
-                  </article>
-              </div>       
-            </div>
-        </div>
-      </div>
-    </section>
-
+                          <article class="home__article swiper-slide">
+                              <img src="../static/images/ripasso-removebg-preview.png" alt="image" class="home__image">   
+                          </article>
+                      </div>       
+                  </div>
+              </div>
+          </div>
+      </section>
   </main>
+      <!--========================SERVICES=====================-->
+      <section class="services section">
+
+          <div class="services__container container grid">
+
+ 
+              <article class="services__card">
+                  <h3 class="services__title">Free Shipping</h3>
+                      <p class="services__description">Order More Than $100</p>
+                      <i class="ri-truck-line"></i>
+                  
+              </article>
+
+              <article class="services__card">
+                  <h3 class="services__title">Secure Payment</h3>
+                      <p class="services__description">100% Secure Payment</p>
+                      <i class="ri-lock-2-line"></i>
+                  
+              </article>
+
+              <article class="services__card">
+                  <h3 class="services__title">24/7 Support</h3>
+                      <p class="services__description">Call us anytime</p>
+                      <i class="ri-customer-service-2-line"></i>
+                  
+              </article>
+              
+          </div>
+      </section>
 
 
-  <!-- Greetings Section -->
-  <!-- <section class="greetings">
-    <div class="container">
-      <div class="text-content">
-        <h2>Let Us Guide <br> Your Discovery</h2>
-        <p>
-          Explore what's available to customers in Quebec with curated insights, expert reviews, and pairing suggestions crafted for both enthusiasts and curious beginners. From tracking your tasting journey to uncovering Quebec's finest selections, your flavorful adventure starts here.
-        </p>
+  <!--========================FEATURED=====================-->
+  <section class="featured discount" id="featured">
+      <h2 class="section__title">Featured Reds</h2>
+
+      <div class="featured__container container">
+          <div class="featured__swiper swiper">
+              <div class="swiper-wrapper">
+                  <article class="featured__card swiper-slide">
+                      <img src="../static/images/ripasso-removebg-preview.png" alt="image" class="featured__img">
+
+                        <h2 class="featured__title">Featured Wine</h2>
+                        <div class="featured__prices">
+                            <span class="featured__discount">$11.99</span>
+                            <span class="featured__price">$19.99</span>
+                            <button class="button">Add to Cart</button>
+                        </div>
+
+                        <div class="featured__actions">
+                            <button><i class="ri-search-line"></i></button>
+                            <button><i class="ri-heart-line"></i></button>
+                            <button><i class="ri-eye-line"></i></button>
+
+                        </div>
+                        
+                    </article>
+
+                    <article class="featured__card swiper-slide">
+                        <img src="../static/images/ripasso-removebg-preview.png" alt="image" class="featured__img">
+
+                        <h2 class="featured__title">Featured Wine</h2>
+                        <div class="featured__prices">
+                            <span class="featured__discount">$11.99</span>
+                            <span class="featured__price">$19.99</span>
+                            <button class="button">Add to Cart</button>
+                        </div>
+
+                        <div class="featured__actions">
+                            <button><i class="ri-search-line"></i></button>
+                            <button><i class="ri-heart-line"></i></button>
+                            <button><i class="ri-eye-line"></i></button>
+
+                        </div>
+                        
+                    </article>
+
+                    <article class="featured__card swiper-slide">
+                      <img src="../static/images/ripasso-removebg-preview.png" alt="image" class="featured__img">
+
+                      <h2 class="featured__title">Featured Wine</h2>
+                      <div class="featured__prices">
+                          <span class="featured__discount">$11.99</span>
+                          <span class="featured__price">$19.99</span>
+                          <button class="button">Add to Cart</button>
+                        </div>
+
+                      <div class="featured__actions">
+                          <button><i class="ri-search-line"></i></button>
+                          <button><i class="ri-heart-line"></i></button>
+                          <button><i class="ri-eye-line"></i></button>
+
+                      </div>
+                      
+                  </article>
+
+
+                
+                  <article class="featured__card swiper-slide">
+                      <img src="../static/images/ripasso-removebg-preview.png" alt="image" class="featured__img">
+
+                      <h2 class="featured__title">Featured Wine</h2>
+                      <div class="featured__prices">
+                          <span class="featured__discount">$11.99</span>
+                          <span class="featured__price">$19.99</span>
+                          <button class="button">Add to Cart</button>
+                      </div>
+
+                      <div class="featured__actions">
+                          <button><i class="ri-search-line"></i></button>
+                          <button><i class="ri-heart-line"></i></button>
+                          <button><i class="ri-eye-line"></i></button>
+
+                      </div>
+                      
+                  </article>
+              </div>
+              <div class="swiper-button-prev">
+                  <i class="ri-arrow-left-s-line"></i>
+              </div>
+              <div class="swiper-button-next">
+                  <i class="ri-arrow-right-s-line"></i>
+              </div>
+          </div>
       </div>
-      <div class="image-content">
-        <img src="https://i.ibb.co/vjsQBpD/La-matini-ere.png" alt="Wine bottle image 1">
-        <img src="https://i.ibb.co/9WmjxP3/Screenshot-2024-11-19-105854.png" alt="Wine bottle image 2">
-        <img src="https://i.ibb.co/5h19K31/bodega.png" alt="Wine bottle image 3">
-      </div>
-    </div>
-  </section> -->
-  
-   <!-- about Section -->
-  <!-- <section class="about">
-  <div class="container">
-    <div class="image-content">
-      <img src="https://i.ibb.co/wNS17hf/toit-raisin.jpg" alt="Grape trellis image">
-    </div>
-    <div class="text-content">
-      <h2>More about Degustify</h2>
-      <p>
-        At Degustify, we are passionate about uncovering hidden gems available at SAQ stores, from affordable treasures to premium selections. Our mission is to deepen your appreciation for wine by providing curated insights, expert reviews, and thoughtful pairing recommendations.
-      </p>
-      <p>
-        Discover the stories behind your favorite bottles, learn about hidden gems, and explore a platform designed for enthusiasts and beginners alike.
-      </p>
-    </div>
-  </div>
-</section> -->
-  
+  </section>
+
+
 <!-- Subscribe Section -->
 <section class="subscribe">
   <div class="container">
