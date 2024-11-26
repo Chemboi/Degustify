@@ -145,12 +145,14 @@ body {
     display: flex;
     flex: 1 1 40%;
     justify-content: flex-end; /* Align images to the right */
-    position: relative; /* Enable overlapping positioning */
     gap: 15px; /* Space between images */
   }
   
   .vineyard .image-content img {
+    width: 100%;
+    height: auto;
     max-width: 150px; /* Set consistent width for images */
+    max-height: 150px; /* Set consistent height for images */
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
@@ -173,12 +175,15 @@ body {
   }
 
     /* Image hover effect */
-    .thumbnail img {
+    .image-content img {
         transition: transform 0.3s ease; /* Smooth scaling */
     }
-    .thumbnail img:hover {
+    .image-content img:hover {
         transform: scale(1.1); /* Slightly enlarge on hover */
     }
+
+
+
 
 
 
