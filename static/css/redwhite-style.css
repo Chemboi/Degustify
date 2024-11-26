@@ -234,28 +234,9 @@ img {
 /*=================================SERVICES=======================*/
 .services__container {
   display: grid; /* Switch to grid for more flexibility in layout */
-  row-gap: 3rem; 
-  z-index: 2; 
-  position: relative; 
-}
-
-
-
-.video-container {
-  position: absolute;
-
-  width: 100%;
-  height: 100%; /* Adjust as per your container size */
-  overflow: hidden; /* Hides the cropped parts */
-}
-
-.video-container iframe {
-  position: absolute;
-  top: 2;
-  left: 2;
-  width: 100%;
-  height: 100%;
- 
+  row-gap: 3rem; /* Maintain the spacing */
+  z-index: 2; /* Ensure this content is above the background video */
+  position: relative; /* Needed to overlay on the video */
 }
 
 
@@ -887,15 +868,14 @@ img {
 
 .services__card i {
   display: block;
-  font-size: 7rem;
-  color: wheat;
+  font-size: 3rem;
+  color: var(--first-color);
   margin-bottom: 1rem;
 }
 
 .services__title {
   font-size: var(--h3-font-size);
   margin-bottom: .5rem;
-  color: #ffffff;
 }
 
 
@@ -942,4 +922,5 @@ img {
 
 .button:hover {
   box-shadow: 0 4px 32px hsla(230, 72%, 32%, .4);
+}
 }
