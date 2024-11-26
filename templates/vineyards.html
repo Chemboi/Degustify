@@ -44,7 +44,6 @@
                 <a href="#riviere">Domaine du Fleuve</a>
                 <a href="#valcaudalies">Val Caudalies</a>
             </div>
-            </div>
         </section>        
         
         <!-- Vineyards Section -->
@@ -62,9 +61,33 @@
                 </div>
 
                 <div class="image-content">
-                    <img src="../static/images/vinyards/Orpailleur1.jpg" alt="L'Orpailleur wine field">
-                    <img src="../static/images/vinyards/Orpailleur2.jpg" alt="L'Orpailleur event">
-                    <img src="../static/images/vinyards/Orpailleur3.jpg" alt="L'Orpailleur grapes">
+                    <div class="thumbnail">
+                        <img
+                          src="../static/images/vinyards/Orpailleur1.jpg"
+                          alt="L'Orpailleur wine field"
+                          data-bs-toggle="modal"
+                          data-bs-target="#imageModal"
+                          data-large="../static/images/vinyards/Orpailleur1.jpg"
+                        >
+                      </div>
+                      <div class="thumbnail">
+                        <img
+                          src="../static/images/vinyards/Orpailleur2.jpg"
+                          alt="L'Orpailleur product"
+                          data-bs-toggle="modal"
+                          data-bs-target="#imageModal"
+                          data-large="../static/images/vinyards/Orpailleur2.jpg"
+                        >
+                      </div>
+                      <div class="thumbnail">
+                        <img
+                          src="../static/images/vinyards/Orpailleur3.jpg"
+                          alt="L'Orpailleur grapes"
+                          data-bs-toggle="modal"
+                          data-bs-target="#imageModal"
+                          data-large="../static/images/vinyards/Orpailleur3.jpg"
+                        >
+                      </div>
                 </div>
 
             </article>
@@ -79,9 +102,33 @@
         
                 </div>
                 <div class="image-content">
-                    <img src="../static/images/vinyards/petronille1.jpg" alt="Ste-Pétronille product">
-                    <img src="../static/images/vinyards/petronille2.jpg" alt="Ste-Pétronille family">
-                    <img src="../static/images/vinyards/petronille3.jpg" alt="Ste-Pétronille field">
+                    <div class="thumbnail">
+                        <img
+                          src="../static/images/vinyards/petronille1.jpg"
+                          alt="Ste-Pétronille product"
+                          data-bs-toggle="modal"
+                          data-bs-target="#imageModal"
+                          data-large="../static/images/vinyards/petronille1.jpg"
+                        >
+                    </div>
+                    <div class="thumbnail">
+                        <img
+                          src="../static/images/vinyards/petronille2.jpg"
+                          alt="Ste-Pétronille family"
+                          data-bs-toggle="modal"
+                          data-bs-target="#imageModal"
+                          data-large="../static/images/vinyards/petronille2.jpg"
+                        >
+                    </div>
+                    <div class="thumbnail">
+                        <img
+                          src="../static/images/vinyards/petronille3.jpg"
+                          alt="Ste-Pétronille field"
+                          data-bs-toggle="modal"
+                          data-bs-target="#imageModal"
+                          data-large="../static/images/vinyards/petronille3.jpg"
+                        >
+                    </div>
                 </div>
             </article>
             <article class="vineyard" id="ardoise">
@@ -95,11 +142,48 @@
 
                 </div>
                 <div class="image-content">
-                    <img src="../static/images/vinyards/ardoise11.jpg" alt="Cotes d'Ardoise sign">
-                    <img src="../static/images/vinyards/ardoise21.jpg" alt="Cotes d'Ardoise field">
-                    <img src="../static/images/vinyards/ardoise31.jpg" alt="Cotes d'Ardoise product">
+                    <div class="thumbnail">
+                        <img
+                          src="../static/images/vinyards/ardoise11.jpg"
+                          alt="Cotes d'Ardoise sign"
+                          data-bs-toggle="modal"
+                          data-bs-target="#imageModal"
+                          data-large="../static/images/vinyards/ardoise1.jpeg"
+                        >
+                    </div>    
+                    <div class="thumbnail">
+                        <img
+                            src="../static/images/vinyards/ardoise21.jpg"
+                            alt="Cotes d'Ardoise field"
+                            data-bs-toggle="modal"
+                            data-bs-target="#imageModal"
+                            data-large="../static/images/vinyards/ardoise21.jpg"
+                        >
+                    </div>    
+                    <div class="thumbnail">
+                        <img
+                            src="../static/images/vinyards/ardoise31.jpg"
+                            alt="Cotes d'Ardoise product"
+                            data-bs-toggle="modal"
+                            data-bs-target="#imageModal"
+                            data-large="../static/images/vinyards/ardoise31.jpg"
+                        >
+                    </div>
                 </div>
             </article>
+            <!-- Modal -->
+            <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-body p-0">
+                            <img src="" alt="Large Image" class="img-fluid w-100" id="modalImage">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>    
+                </div>
+            </div>
         </section>
 
         <section class="vineyard">
@@ -181,7 +265,19 @@
             // Clear the form
             document.getElementById('contactForm').reset();
         });
-        </script>        
+        </script>     
+          <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // JavaScript to handle opening the modal with the correct image
+    document.querySelectorAll('.thumbnail img').forEach(img => {
+      img.addEventListener('click', function() {
+        const largeImageSrc = this.getAttribute('data-large'); // Get the large image URL
+        const modalImage = document.getElementById('modalImage');
+        modalImage.src = largeImageSrc; // Set the modal image source
+      });
+    });
+  </script>   
     
 </body>
 </html>
