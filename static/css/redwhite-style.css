@@ -1,5 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&family=Montagu+Slab:opsz,wght@16..144,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Montagu+Slab:opsz,wght@16..144,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
 
@@ -17,14 +17,14 @@
 
 
   /*===========================FONTS and TYPOGRAPHY================*/
-  --body-font: 'Frank Ruhl Libre', sans-serif;
-  --second-font: 'Inria Serif', sans-serif;
-  --biggest-font-size: 4rem;
+  --body-font: 'Arial', sans-serif;
+  --second-font: 'Arial', sans-serif;
+  --biggest-font-size: 2rem;
   --h1-font-size: 2rem;
   --h2-font-size: 1.5rem;
   --h3-font-size: 1rem;
-  --normal-font-size: 2rem;
-  --small-font-size: 3.5rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813;
   --smaller-font-size: .75rem;
 
 
@@ -280,8 +280,7 @@ img {
   margin: 5rem;
   border-radius: 10px;
   overflow: hidden;
-  height: 450px;
-  width: 800px;
+  height: 450px; /* set to 450 because some of the images are not a static size */
   transition: border .9s, background-color .4s;
   box-shadow: 0 10px 10px hsla(15, 72%, 23%, 0.1);
 
@@ -305,7 +304,7 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  column-gap: .40rem;
+  column-gap: .75rem;
   margin-bottom: 1.25rem;
 } 
 
@@ -314,13 +313,12 @@ img {
 }
 
 .featured__price{
-  font-size: var(--h3-font-size);
+  font-size: var(--small-font-size);
   text-decoration: line-through;
 }
 
 .featured__card .button {
   cursor: pointer;
-  
 }
 
 .featured__actions{
@@ -335,7 +333,7 @@ img {
 
 .featured__actions button{
   background: none;
-  font-size: 2rem;
+  font-size: 1.25rem;
   color: var(--first-color);
   cursor: pointer;
 }
@@ -577,9 +575,6 @@ img {
       right: 0;
       margin-inline:auto;
   }
-  .services__container{
-    flex-direction: column;
-  }
 
   .nav__menu{
       width: 380px;
@@ -629,7 +624,41 @@ img {
         justify-content: space-between;
     }
 
-
+    .discount__container {
+        grid-template-columns:420px;
+        justify-content: center;
+    }
+    .greetings .container {
+      flex-direction: column;
+    }
+  
+    .greetings .text-content {
+      flex: 1 1 100%;
+      margin-bottom: 20px;
+    }
+  
+    .greetings .image-content {
+      flex: 1 1 100%;
+      justify-content: center;
+    }
+  
+    .greetings .image-content img {
+      margin-right: 0;
+    }
+    
+     .about .container {
+      flex-direction: column-reverse;
+      text-align: center; /* Center-align text for smaller screens */
+    }
+  
+    .about .text-content {
+      padding: 0;
+      text-align: center; /* Center-align text */
+    }
+  
+    .about .image-content img {
+      margin-bottom: 20px;
+    }
 
     .subscribe .container {
         flex-direction: column;
