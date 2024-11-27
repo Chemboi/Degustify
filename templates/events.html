@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+    <link rel="stylesheet" href="../static/css/events-style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Degustify</h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="redwine.html">Red Wines</a></li>
+                    <li><a href="whitewine.html">White Wines</a></li>
+                    <li><a href="vineyards.html">Vineyards</a></li>
+                    <li><a href="events.html">Events comming soon</a></li>
+                </ul>
+            </nav>
+            <a href="#login" class="login">Login</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="events-container">
+            <h1>Events happening soon in the Montreal city area.</h1>
+            <article class="events">
+                <div class="text-content">
+                    <h2>The Jessica Harnois Wine Club Wine Tasting Salon in Montreal</h2>
+                    <h3>About</h3>
+                    <p>
+                        On Thursday, December 5, 2024, from 6 to 8 p.m., the next tasting room will be held at the 
+                        magnificent Club St-Denis in Montreal.<br>
+                        In the company of members of Jessica Harnois' team, this will be a superb opportunity to discover dozens of wines!<br>
+                        Places are limited - book as soon as possible to make sure you can join us!
+                    </p>
+                    <h3>Address</h3>
+                    <h4>Club St-Denis</h4>
+                    <p>257 rue Sherbrooke est Montréal, QC H2X 1E3</p>
+                    <h3>Days left for the event: <span id="daysLeft"></span></h3>
+                    <h3>More information <a href="https://www.eventbrite.ca/e/billets-salon-de-degustation-de-vins-par-le-club-de-vins-jessica-harnois-a-montreal-1070016972569?aff=ebdssbdestsearch">here.</a></h3>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <!-- Logo and Éduc'alcool -->
+            <div class="footer-logo">
+                <h2>Degustify</h2>
+                <img src="https://i.ibb.co/RCV6JSx/moderation.png" alt="Éduc'alcool moderation message">
+            </div>
+
+            <!-- Navigation Links -->
+            <div class="footer-links">
+                <h3>Explore</h3>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="#red-wines">Red wines</a></li>
+                    <li><a href="#white-wines">White wines</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Social Links -->
+            <div class="footer-social">
+                <h3>Follow us</h3>
+                <ul>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function calculateTimeLeft(eventDate) {
+          const today = new Date();
+          const event = new Date(eventDate);
+
+
+          //calculate the difference in milliseconds
+          const timeDifference = event - today;
+
+          //Event in the past. return "Event has passed"
+          if(timeDifference <= 0){
+            days = 0,
+            hours = 0,
+            minutes = 0,
+            message = "The event has already passed"
+          };
+
+          
+
+          //convert time difference to days, hours and minutes
+          const days = Math.floor(timeDifference / (1000 * 60 * 60 *24));
+          const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+
+          return {days, hours, minutes, message: ""};
+
+        }
+
+        // Insert the days left in HTML
+        const daysLeftElement = document.getElementById('daysLeft');
+        const {days, hours, minutes, message} = calculateTimeLeft('2024-12-05T18:00:00');
+        daysLeftElement.textContent = daysLeft;
+
+        if (message) {
+          daysLeftElement.textContent = message;
+        } else{
+            daysLeftElement.textContent = `${days} days, ${hours} hours, and ${minutes} minutes`;
+        }
+    </script>
+</body>
+</html>
