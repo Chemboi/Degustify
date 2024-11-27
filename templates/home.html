@@ -15,15 +15,17 @@
     <div class="container">
       <h1 class="logo" data-key="title">Degustify</h1>
       <nav class="nav">
-        <ul>
-          <li><a href="redwine.html">Red Wines</a></li>
-          <li><a href="whitewine.html">White Wines</a></li>
-          <li><a href="vineyards.html">Vineyards</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+        <nav class="nav">
+          <ul>
+            <li><a href="redwine.html" data-key="redWine">Red Wines</a></li>
+            <li><a href="whitewine.html" data-key="whiteWine">White Wines</a></li>
+            <li><a href="vineyards.html" data-key="vineyards">Vineyards</a></li>
+            <li><a href="#contact" data-key="contact">Contact</a></li>
+          </ul>
+        </nav>
       </nav>
       <div class="header-actions">
-        <a href="#login" class="login">Login</a>
+        <a href="#login" class="login" data-key="login">Login</a>
         <button id="lang-toggle" class="lang-toggle">Fr</button>
       </div>
     </div>
@@ -33,15 +35,13 @@
   <section class="greetings">
     <div class="container">
       <div class="text-content">
-        <h2 data-key="description">Discover the best wines from around the world.</h2>
+        <h2 data-key="description">Discover the best wines from Quebec.</h2>
         <p data-key="additionalInfo">
-          Explore what's available to customers in Quebec with curated insights, expert reviews, and pairing suggestions crafted for both enthusiasts and curious beginners. From tracking your tasting journey to uncovering Quebec's finest selections, your flavorful adventure starts here.
+          Discover the unique offerings of Quebec's wineries with curated insights, expert reviews, and thoughtful pairing suggestions designed for enthusiasts and curious beginners alike. From uncovering hidden gems to savoring Quebec's finest selections, embark on a tasting journey that celebrates the heart of Quebec's wine culture.
         </p>
       </div>
       <div class="image-content">
-        <img src="https://i.ibb.co/vjsQBpD/La-matini-ere.png" alt="Wine bottle image 1">
-        <img src="https://i.ibb.co/9WmjxP3/Screenshot-2024-11-19-105854.png" alt="Wine bottle image 2">
-        <img src="https://i.ibb.co/5h19K31/bodega.png" alt="Wine bottle image 3">
+        <img src="https://i.ibb.co/2qFMnW3/vin-quebecois.png" alt="Wine from Quebec">
       </div>
     </div>
   </section>
@@ -55,10 +55,7 @@
       <div class="text-content">
         <h2 data-key="aboutTitle">More about Degustify</h2>
         <p data-key="aboutDescription">
-          At Degustify, we are passionate about uncovering hidden gems available at SAQ stores, from affordable treasures to premium selections. Our mission is to deepen your appreciation for wine by providing curated insights, expert reviews, and thoughtful pairing recommendations.
-        </p>
-        <p>
-          Discover the stories behind your favorite bottles, learn about hidden gems, and explore a platform designed for enthusiasts and beginners alike.
+          At Degustify, we are passionate about showcasing the exceptional wines from Quebec's vineyards, from affordable treasures to premium selections available at SAQ stores. Our mission is to deepen your appreciation for Quebec's rich winemaking heritage by providing curated insights, expert reviews, and thoughtful pairing recommendations. Discover the stories behind Quebec's finest bottles, learn about the region's hidden gems, and explore a platform crafted for both wine enthusiasts and curious beginners.
         </p>
       </div>
     </div>
@@ -67,23 +64,27 @@
   <!-- Subscribe Section -->
   <section class="subscribe">
     <div class="container">
+
       <div class="text-content">
         <h2 data-key="subscribeTitle">Subscribe</h2>
         <p data-key="subscribeDescription">
-          Sign up with your email to receive curated insights, wine reviews, pairing tips, and updates on the best selections at SAQ. Be the first to discover hidden gems and explore new flavors, all delivered straight to your inbox.
+          Sign up with your email to receive exclusive insights into Quebec's wineries, wine reviews, pairing tips, and updates on the finest selections at SAQ. Be the first to uncover hidden gems, savor new flavors, and celebrate Quebec's vibrant wine culture and all delivered straight to your inbox.
         </p>
+
         <form id="subscribeForm">
           <div class="form-group">
-            <input type="text" id="firstName" placeholder="First Name" required>
-            <input type="text" id="lastName" placeholder="Last Name" required>
+            <input type="text" id="firstName" placeholder="First Name" data-key="placeholderFirstName" required>
+            <input type="text" id="lastName" placeholder="Last Name" data-key="placeholderLastName" required>
           </div>
-          <input type="email" id="email" placeholder="Email Address" required>
+          <input type="email" id="email" placeholder="Email Address" data-key="placeholderEmail" required>
           <button type="submit" data-key="subscribeButton">Sign up</button>
-        </form>
+        </form>        
       </div>
+
       <div class="image-content">
         <img src="https://i.ibb.co/mRp5Zp6/subscrib.png" alt="Subscription image">
       </div>
+
     </div>
   </section>
 
@@ -93,17 +94,17 @@
       <!-- Logo and Éduc'alcool -->
       <div class="footer-logo">
         <h2 data-key="title">Degustify</h2>
-        <img src="https://i.ibb.co/RCV6JSx/moderation.png" alt="Éduc'alcool moderation message">
+        <img src="https://i.ibb.co/QCQX4mg/moderation2.png" alt="Éduc'alcool moderation message">
       </div>
 
       <!-- Navigation Links -->
       <div class="footer-links">
         <h3 data-key="explore">Explore</h3>
         <ul>
-          <li><a href="#red-wines" data-key="redWine">Red Wines</a></li>
-          <li><a href="#white-wines" data-key="whiteWine">White Wines</a></li>
-          <li><a href="vineyards.html" data-key="vineyards">Vineyards</a></li>
-          <li><a href="#contact" data-key="contact">Contact Us</a></li>
+          <li><a href="#red-wines" data-key="redWine">Vin Rouge</a></li>
+          <li><a href="#white-wines" data-key="whiteWine">Vin Blanc</a></li>
+          <li><a href="vineyards.html" data-key="vineyards">Vignobles</a></li>
+          <li><a href="#contact" data-key="contact">Contactez-nous</a></li>
         </ul>
       </div>
 
