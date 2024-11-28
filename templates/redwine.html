@@ -8,7 +8,7 @@
 
 
       <!--====================== FAVICON =================-->
-      <link rel="shortcut icon" type="image/x-icon" href="/assests/img/cover1.jpeg" />
+      <link rel="shortcut icon" type="image/x-icon" href="../static/images/grape-removebg-preview.png" />
     
       <!--======================REMIXCONS===================-->
       <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.css" rel="stylesheet"/>
@@ -47,31 +47,66 @@
                       Your Favorite Local <em>Red</em> Wines
                   </h1>
                   <p class="homedescription">
-                    Discover excellent white wines made and 
-                    produced in the region of Quebec. We encourage
-                    you to take advantage of our online retail advantage
-                    delivery options. 
+                      Discover excellent white wines made and
+                      produced in the region of Quebec. We encourage
+                      you to take advantage of our online retail advantage
+                      delivery options.
                   </p>
                   <a href="#" class="button">Explore Now</a>
+
+                  <div class="swiper__description">
+                      Swiper Readout description
+                      <table class="swiper__description__list">
+                          <tr>
+                              <td class="label">Product:</td>
+                              <td class="value">Insert Product name</td>
+                          </tr>
+                          <tr class="fixed-height">
+                              <td class="label">Description:</td>
+                              <td class="value">Insert description</td>
+                          </tr>
+                          <tr>
+                              <td class="label">Price:</td>
+                              <td class="value">Insert product price</td>
+                          </tr>
+                          <tr>
+                              <td class="label">Pairings:</td>
+                              <td class="value">Insert Pairings</td>
+                          </tr>
+                      </table>
+
+                  </div>
               </div>
 
               <div class="home__images">
                   <div class="home__swiper swiper">
                       <div class="swiper-wrapper">
-                          <article class="home__article swiper-slide">
-                              <img src="../static/images/les_deux_terre-removebg-preview.png" alt="image" class="home__image">
+                          <article class="home__article swiper-slide"
+                                   data-product="<h3>Valipolicella</h3>"
+                                   data-description="<h6>A bold red wine from Quebec's finest vineyards.</h6>"
+                                   data-price="$19.99"
+                                   data-pairing="Cheese, Red Meat">
+                              
+                              
+                              <img src="../static/images/Valpolicello-removebg-preview.png" alt="image" class="home__image">
                           </article>
 
-                          <article class="home__article swiper-slide">
-                              <img src="../static/images/ripasso-removebg-preview.png" alt="image" class="home__image">                           
+                          <article class="home__article swiper-slide"
+                                    data-product="<h3>655</h3>" 
+                                    data-description="<h6>A bold red wine from Quebec's finest vineyards.</h6>" 
+                                    data-price="$24.99" 
+                                    data-pairings="Pasta, Dark Chocolate">
+                              <img src="../static/images/655-removebg-preview.png" alt="image" class="home__image">                           
                           </article>
 
-                          <article class="home__article swiper-slide">
-                              <img src="../static/images/ripasso-removebg-preview.png" alt="image" class="home__image">   
-                          </article>
 
-                          <article class="home__article swiper-slide">
-                              <img src="../static/images/ripasso-removebg-preview.png" alt="image" class="home__image">   
+
+                          <article class="home__article swiper-slide"
+                                   data-product="Dialogo" 
+                                    data-description="<h6>Smooth and fruity wine.</h6>" 
+                                    data-price="$24.99" 
+                                    data-pairings="Pasta, Dark Chocolate">
+                              <img src="../static/images/Dialogo-removebg-preview.png" alt="image" class="home__image">   
                           </article>
                       </div>       
                   </div>
@@ -262,6 +297,6 @@
   </div>
 </footer>
 <script src="../static/js/swiper-bundle.min.js"></script>
-<script src="../static/js/scritp.js"></script>
+<script src="../static/js/swiper-function.js"></script>
 </body>
 </html>

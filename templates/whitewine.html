@@ -8,7 +8,7 @@
 
 
       <!--====================== FAVICON =================-->
-      <link rel="shortcut icon" type="image/x-icon" href="/assests/img/cover1.jpeg" />
+      <link rel="shortcut icon" type="image/x-icon" href=".../static/images/grape-removebg-preview.png" />
     
       <!--======================REMIXCONS===================-->
       <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.css" rel="stylesheet"/>
@@ -40,44 +40,85 @@
     <main class="main">
       <!--==========================HOME========================-->
       <section class="home section" id="home">
-          <div class="home__container container grid">
-              <div class="home__data">
-                  <h1 class="home__title">
-                      Browse & Savour<br>
-                      Your Favorite Local <em>White</em> Wines
-                  </h1>
-                  <p class="homedescription">
-                      Discover excellent white wines made and 
-                      produced in the region of Quebec. We encourage
-                      you to take advantage of our online retail advantage
-                      delivery options. 
-                  </p>
-                  <a href="#" class="button">Explore Now</a>
-              </div>
+        <div class="home__container container grid">
+            <div class="home__data">
+                <h1 class="home__title">
+                    Browse & Savour<br>
+                    Your Favorite Local <em>Red</em> Wines
+                </h1>
+                <p class="homedescription">
+                    Discover excellent white wines made and
+                    produced in the region of Quebec. We encourage
+                    you to take advantage of our online retail advantage
+                    delivery options.
+                </p>
+                <a href="#" class="button">Explore Now</a>
 
-              <div class="home__images">
-                  <div class="home__swiper swiper">
-                      <div class="swiper-wrapper">
-                          <article class="home__article swiper-slide">
-                              <img src="../static/images/les_deux_terre-removebg-preview.png" alt="image" class="home__image">
-                          </article>
+                <div class="swiper__description">
+                    Swiper Readout description
+                    <table class="swiper__description__list">
+                        <tr>
+                            <td class="label">Product:</td>
+                            <td class="value">Insert Product name</td>
+                        </tr>
+                        <tr class="fixed-height">
+                            <td class="label">Description:</td>
+                            <td class="value">Insert description</td>
+                        </tr>
+                        <tr>
+                            <td class="label">Price:</td>
+                            <td class="value">Insert product price</td>
+                        </tr>
+                        <tr>
+                            <td class="label">Pairings:</td>
+                            <td class="value">Insert Pairings</td>
+                        </tr>
+                    </table>
 
-                          <article class="home__article swiper-slide">
-                              <img src="../static/images/ripasso-removebg-preview.png" alt="image" class="home__image">                           
-                          </article>
+                </div>
+            </div>
 
-                          <article class="home__article swiper-slide">
-                              <img src="../static/images/ripasso-removebg-preview.png" alt="image" class="home__image">   
-                          </article>
+            <div class="home__images">
+                <div class="home__swiper swiper">
+                    <div class="swiper-wrapper">
+                        <article class="home__article swiper-slide"
+                                 data-product="<h3>91 Hard Crimes</h3>"
+                                 data-description="<h6>A delightfully fresh taste</h6>"
+                                 data-price="$19.99"
+                                 data-pairing="Cheese, Red Meat">
+                            
+                            
+                            <img src="../static/images/white-wine/19_Crimes_Hard_Chard-removebg-preview.png" alt="image" class="home__image">
+                        </article>
 
-                          <article class="home__article swiper-slide">
-                              <img src="../static/images/ripasso-removebg-preview.png" alt="image" class="home__image">   
-                          </article>
-                      </div>       
-                  </div>
-              </div>
-          </div>
-      </section>
+                        <article class="home__article swiper-slide"
+                                  data-product="<h3>Dao</h3>" 
+                                  data-description="<h6>Not just a great teacher, but a great wine as well</h6>" 
+                                  data-price="$24.99" 
+                                  data-pairings="Pasta, Dark Chocolate">
+                            <img src="../static/images/white-wine/Dao-removebg-preview.png" alt="image" class="home__image">                           
+                        </article>
+
+                        <article class="home__article swiper-slide"
+                                 data-product="<h3>Terra Alpina</h3>" 
+                                  data-description="<h6>Smooth, white and full bodied wine.</h6>" 
+                                  data-price="$24.99" 
+                                  data-pairings="Pasta, Dark Chocolate">
+                            <img src="../static/images/white-wine/Terra_Alpino-removebg-preview.png" alt="image" class="home__image">   
+                        </article>
+
+                        <article class="home__article swiper-slide"
+                                 data-product="<h3>Secateurs</h3>" 
+                                  data-description="<h6>Smooth and fruity wine.</h6>" 
+                                  data-price="$24.99" 
+                                  data-pairings="Pasta, Dark Chocolate">
+                            <img src="../static/images/white-wine/Secateurs.png" alt="image" class="home__image">   
+                        </article>
+                    </div>       
+                </div>
+            </div>
+        </div>
+    </section>
   </main>
       <!--========================SERVICES=====================-->
       <section class="services section">
@@ -239,6 +280,6 @@
   </div>
 </footer>
 <script src="../static/js/swiper-bundle.min.js"></script>
-<script src="../static/js/scritp.js"></script>
+<script src="../static/js/swiper-function.js"></script>
 </body>
 </html>
