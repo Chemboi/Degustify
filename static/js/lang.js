@@ -11,6 +11,8 @@ const translations = {
 
         vineyards: "Vineyards",
 
+        events: "Events",
+
         contact: "Contact Us",
 
         login: "Login",
@@ -55,6 +57,8 @@ const translations = {
         whiteWine: "Vin Blanc",
     
         vineyards: "Vignobles",
+
+        events: "Événements",
     
         contact: "Contactez-nous",
     

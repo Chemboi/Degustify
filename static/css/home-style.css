@@ -10,7 +10,7 @@
     background-color: #f2f2f2; /* Light grey for the body background */
     color: #333333; /* Dark grey for text */
     line-height: 1.6;
-    padding-top: 60px; 
+    padding-top: calc(60px + 20px); 
   }
   
   .image-content img {
@@ -157,9 +157,9 @@
   }
   
   .greetings .container {
-    display: flex; /* Enables side-by-side layout */
-    align-items: center; /* Centers the content vertically */
-    justify-content: space-between; /* Adds space between text and image */
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
     flex-wrap: wrap; /* Allows wrapping for smaller screens */
     max-width: 1200px;
     margin: 0 auto;
@@ -253,7 +253,7 @@
 
 
   /* Subscribe Section */
-.subscribe {
+  .subscribe {
     background-color: #f2f2f2; /* Light grey background */
     padding: 40px 20px;
   }
@@ -390,26 +390,42 @@
 
 
 
-    /* Classes */
+    /* Classes for media*/
  
     .greetings .container {
       flex-direction: column;
-    }
+      align-items: center;
+      text-align: center;
+      padding: 40px 20px;
+  }
   
-    .greetings .text-content {
-      flex: 1 1 100%;
-      margin-bottom: 20px;
-    }
-  
-    .greetings .image-content {
-      flex: 1 1 100%;
+    .greetings .text-content h2 {
+      font-size: 2rem;
+      line-height: 1.4; /* Slightly tighter line height */
+      margin: 15px 0; /* Reduce top and bottom margins */
+  }
+
+  .greetings .text-content p {
+      margin-bottom: 10px; /* Reduce space below paragraph */
+      padding: 0 15px; /* Maintain consistent horizontal padding */
+  }
+
+  .greetings .image-content {
+      margin: 20px 0; /* Reduce vertical margin for the image */
+      display: flex;
       justify-content: center;
-    }
-  
-    .greetings .image-content img {
-      margin-right: 0;
-    }
-    
+      align-items: center; /* Ensure proper alignment */
+  }
+
+  .greetings .image-content img {
+      max-width: 90%; /* Slightly increase the image width */
+      height: auto; /* Maintain aspect ratio */
+      border-radius: 8px; /* Adjust border radius for a cleaner look */
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+  }
+
+
+
      .about .container {
       flex-direction: column-reverse;
       text-align: center; /* Center-align text for smaller screens */
@@ -424,10 +440,17 @@
       margin-bottom: 20px;
     }
 
+
+
     .subscribe .container {
       flex-direction: column;
       text-align: center;
     }
+
+    .subscribe .text-content {
+      text-align: center; /* Center-align text inside the text-content */
+      margin: 0 auto; /* Ensure it centers on the page */
+  }
   
     .subscribe .image-content {
       margin-bottom: 20px;
@@ -440,8 +463,6 @@
     .subscribe input {
       max-width: 90%;
     }
-
-
 
   }
   
