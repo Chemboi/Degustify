@@ -1,8 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&family=Montagu+Slab:opsz,wght@16..144,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-
-
-
 /*================================Variables CSS ==========================*/
 :root {
   /* =============== colors =================== */
@@ -213,16 +208,26 @@ img {
   margin-bottom:2rem;
 }
 
+
 .home__images{
   display: grid;
-  
-  
+  transition: transform 0.3s ease, filter 0.3s ease; /* Smooth transition for hover effects */
 }
 
 .home__article,
 img {
   width: 220px;
-  transition: scale .4s;
+  transition: scale .9s;
+  
+  
+}
+.home__article 
+img:hover {
+  width: 220px;
+  transition: scale 5s;
+  transition-delay: .5s;
+  transform: scale(2.5); /* Slightly zoom in */
+  
   
 }
 
@@ -543,6 +548,10 @@ img {
         grid-template-columns:1fr;
         row-gap: 2rem;
     }
+    .services__card i {
+        font-size: 7rem;
+        width: 800px;
+    }
 }
 
 
@@ -557,7 +566,7 @@ img {
 
 }
 
-@media screen and (min-width: 576px){
+@media screen and (min-width: 576px){   
   .search__form{
       width: 500px;
       margin-inline: auto;
@@ -597,6 +606,7 @@ img {
       justify-content: center;
       column-gap: 10rem;
   }
+
 }
 
   
@@ -928,4 +938,79 @@ img {
 .button:hover {
   box-shadow: 0 4px 32px hsla(230, 72%, 32%, .4);
 }
+}
+
+
+/*==========================Swiper Table Description================================*/
+
+.swiper__description {
+  z-index: 10;
+  margin-top: 5px;
+  background-color: rgba(255, 255, 255, 0.8); 
+  padding: 15px;
+  border-radius: 8px; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
+  border-left: 50px solid rgb(70, 51, 51);
+}
+
+
+.swiper__description__list {
+  width: 100%;
+  height: auto; 
+  border-collapse: collapse; 
+  table-layout: fixed; 
+  font-family: "Georgia", serif; 
+  font-size: 16px; 
+  color: #4d2c2c; 
+  background-color: rgba(255, 255, 255, 0.95); 
+}
+
+
+.swiper__description__list td {
+  padding: 10px 12px; 
+  border: 1px solid rgba(77, 44, 44, 0.3); 
+  vertical-align: top; 
+  text-align: left; 
+}
+
+
+.swiper__description__list .label {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #7b4c4c; 
+  white-space: nowrap; 
+}
+
+.swiper__description__list .value {
+  font-size: 1rem;
+  color: #4d2c2c;
+  word-wrap: break-word;
+}
+
+
+.swiper__description__list tr:hover {
+  background-color: rgba(125, 80, 80, 0.1); 
+}
+
+.swiper__description__list td:first-child {
+  font-weight: bold;
+  font-family: "Georgia", serif; 
+  color: #6e3b3b; 
+}
+
+
+.swiper__description__list td {
+  border: 1px solid rgba(125, 80, 80, 0.2);
+}
+
+
+.swiper__description__list .fixed-height td {
+  height: 100px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  .swiper__description__list {
+      font-size: 14px;
+  }
 }
