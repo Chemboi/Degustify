@@ -17,4 +17,20 @@
     alert(`Thank you, ${firstName}, for subscribing!`);
   });
 
+  document.addEventListener('DOMContentLoaded', () => {
+    const hamburgerMenu = document.getElementById('hamburgerMenu');
+    const mobileNav = document.getElementById('mobileNav');
+    
+    // Add click event to the hamburger menu
+    hamburgerMenu.addEventListener('click', () => {
+        mobileNav.classList.toggle('open'); // Toggles the mobile navigation menu
+    });
+
+    // Close menu on link click
+    mobileNav.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            mobileNav.classList.remove('open');
+        });
+    });
+});
 

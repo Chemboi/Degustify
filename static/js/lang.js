@@ -5,6 +5,8 @@ const translations = {
         /* header */ 
         title: "Degustify",
 
+        home: "Home",
+
         redWine: "Red Wine",
 
         whiteWine: "White Wine",
@@ -51,6 +53,8 @@ const translations = {
 
         /* header */ 
         title: "Degustify",
+
+        home: "Accueil",
     
         redWine: "Vin Rouge",
     
