@@ -465,7 +465,7 @@ body {
 
   .mobile-nav {
       display: none; /* Default hidden */
-      padding-top: 20px;
+      padding-top: 20px; /* Ensure no overlap between hamburger and home */
   }
 
   .mobile-nav.open {
