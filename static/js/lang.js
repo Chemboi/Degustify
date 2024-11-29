@@ -5,11 +5,15 @@ const translations = {
         /* header */ 
         title: "Degustify",
 
+        home: "Home",
+
         redWine: "Red Wine",
 
         whiteWine: "White Wine",
 
         vineyards: "Vineyards",
+
+        events: "Events",
 
         contact: "Contact Us",
 
@@ -49,12 +53,16 @@ const translations = {
 
         /* header */ 
         title: "Degustify",
+
+        home: "Accueil",
     
         redWine: "Vin Rouge",
     
         whiteWine: "Vin Blanc",
     
         vineyards: "Vignobles",
+
+        events: "Événements",
     
         contact: "Contactez-nous",
     
