@@ -217,14 +217,14 @@ img {
 .home__article,
 img {
   width: 220px;
-  transition: scale .9s;
+  transition: scale 10s;
   
   
 }
 .home__article 
 img:hover {
   width: 220px;
-  transition: scale 5s;
+  transition: scale 10s;
   transition-delay: .5s;
   transform: scale(2.5); /* Slightly zoom in */
   
