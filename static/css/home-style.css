@@ -152,6 +152,7 @@ body {
   align-items: flex-start;
   max-width: 1200px;
   margin: 0 auto;
+  gap: 20px;
 }
 
 .footer-logo {
@@ -170,225 +171,259 @@ body {
   margin-top: 10px;
 }
 
-.footer-links, .footer-social {
-  flex: 1 1 30%;
+
+
+
+.footer-links,
+.footer-social,
+.footer-contact {
+  flex: 1 1 20%; /* Starts with 20% width, grows/shrinks proportionally to fit container space */
 }
 
-.footer-links h3, .footer-social h3 {
+.footer-links h3,
+.footer-social h3,
+.footer-contact h3 {
   font-size: 1.2rem;
   font-weight: bold;
-  margin-bottom: 15px;
+  margin-bottom: 15px; /* Uniform spacing */
 }
 
-.footer-links ul, .footer-social ul {
+.footer-links ul,
+.footer-social ul,
+.footer-contact ul {
   list-style: none;
   padding: 0;
 }
 
-.footer-links ul li, .footer-social ul li {
-  margin-bottom: 10px;
+.footer-links ul li,
+.footer-social ul li,
+.footer-contact ul li {
+  margin-bottom: 10px; /* Consistent spacing for list items */
 }
 
-.footer-links ul li a, .footer-social ul li a {
+.footer-links ul li a,
+.footer-social ul li a,
+.footer-contact ul li strong {
   text-decoration: none;
-  color: #333333; /* Dark grey for links */
+  color: #333333; /* Dark grey for links and strong text */
   transition: color 0.3s ease;
 }
 
-.footer-links ul li a:hover, .footer-social ul li a:hover {
-  color: #0466c8; /* Bright blue for hover effect */
+.footer-links ul li a:hover,
+.footer-social ul li a:hover,
+.footer-contact ul li strong:hover {
+  color: #0466c8; /* Bright blue hover effect */
+}
+
+.footer-bottom {
+  background-color: #f9f9f9; /* Light grey background for the bottom section */
+  text-align: center;
+  padding: 15px 10px;
+  font-size: 0.9rem; /* Slightly smaller font size */
+  border-top: 1px solid #e6e6e6;
+}
+
+.footer-bottom a {
+  text-decoration: none;
+  color: #0466c8; /* Bright blue for links */
+  transition: color 0.3s ease;
+}
+
+.footer-bottom a:hover {
+  color: #333333; /* Dark grey on hover */
 }
 
 
 
 
-  
 
-
-  
-  /* Greetings Section */
-  .greetings {
-    background-color: #f2f2f2; /* Light grey background for the greetings section */
-    padding: 40px 20px;
-  }
-  
-  .greetings .container {
-    display: flex; 
-    align-items: center; 
-    justify-content: space-between; 
-    flex-wrap: wrap; /* Allows wrapping for smaller screens */
-    max-width: 1200px;
-    margin: 0 auto;
-    gap: 20px; /* Adds spacing between text and image */
-  }
-  
-  .greetings .text-content {
-    flex: 1 1 50%; /* Ensures text takes 50% of the width on larger screens */
-    max-width: 600px; /* Restrict max width for readability */
-  }
-  
-  .greetings .text-content h2 {
-    font-size: 2.5rem;
-    font-family: Georgia, serif;
-    margin-bottom: 20px;
-    color: #000000; /* Black for the heading */
-  }
-  
-  .greetings .text-content p {
-    margin-bottom: 20px;
-    color: #333333; /* Dark grey for paragraph text */
-  }
-  
-  .greetings .image-content {
-    flex: 1 1 40%; /* Ensures image takes 40% of the width on larger screens */
-    display: flex;
-    justify-content: center; /* Centers the image horizontally */
-    align-items: center; /* Centers the image vertically */
-  }
-  
-  .greetings .image-content img {
-    max-width: 80%; /* Make the image responsive */
-    height: auto; 
-    border-radius: 10px; 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
-  }
-  
-  
   
 
 
 
-  /* About Section */
-  .about {
-    background-color: #ffffff; /* Light grey background */
-    padding: 40px 20px;
-  }
-  
-  .about .container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .about .image-content {
-    flex: 1 1 50%;
-    text-align: left; /* Align the image to the left */
-  }
-  
-  .about .image-content img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for the image */
-  }
-  
-  .about .text-content {
-    flex: 1 1 45%;
-    text-align: left; /* Right-aligned text */
-    padding-left: 20px;
-  }
-  
-  .about .text-content h2 {
-    font-size: 2.5rem;
-    font-family: Georgia, serif; /* Georgia font for the heading */
-    color: #000000; /* Black heading color */
-    margin-bottom: 20px;
-  }
-  
-  .about .text-content p {
-    color: #333333; /* Dark grey for paragraph text */
-    margin-bottom: 15px;
-    line-height: 1.8;
-  }
-  
+/* Greetings Section */
+.greetings {
+  background-color: #f2f2f2; /* Light grey background for the greetings section */
+  padding: 40px 20px;
+}
+
+.greetings .container {
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between; 
+  flex-wrap: wrap; /* Allows wrapping for smaller screens */
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px; /* Adds spacing between text and image */
+}
+
+.greetings .text-content {
+  flex: 1 1 50%; /* Ensures text takes 50% of the width on larger screens */
+  max-width: 600px; /* Restrict max width for readability */
+}
+
+.greetings .text-content h2 {
+  font-size: 2.5rem;
+  font-family: Georgia, serif;
+  margin-bottom: 20px;
+  color: #000000; /* Black for the heading */
+}
+
+.greetings .text-content p {
+  margin-bottom: 20px;
+  color: #333333; /* Dark grey for paragraph text */
+}
+
+.greetings .image-content {
+  flex: 1 1 40%; /* Ensures image takes 40% of the width on larger screens */
+  display: flex;
+  justify-content: center; /* Centers the image horizontally */
+  align-items: center; /* Centers the image vertically */
+}
+
+.greetings .image-content img {
+  max-width: 80%; /* Make the image responsive */
+  height: auto; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+}
 
 
 
 
-  /* Subscribe Section */
-  .subscribe {
-    background-color: #f2f2f2; /* Light grey background */
-    padding: 40px 20px;
-  }
-  
-  .subscribe .container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .subscribe .text-content {
-    flex: 1 1 45%;
-    text-align: left;
-  }
-  
-  .subscribe .text-content h2 {
-    font-size: 2.5rem;
-    font-family: Georgia, serif; /* Georgia font for the heading */
-    color: #000000; /* Black heading color */
-    margin-bottom: 20px;
-  }
-  
-  .subscribe .text-content p {
-    color: #333333; /* Dark grey for paragraph text */
-    margin-bottom: 20px;
-    line-height: 1.8;
-  }
-  
-  .subscribe form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  
-  .subscribe .form-group {
-    display: flex;
-    gap: 10px;
-  }
-  
-  .subscribe input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #cccccc;
-    border-radius: 5px;
-    font-size: 1rem;
-  }
-  
-  .subscribe button {
-    padding: 10px 20px;
-    background-color: #000000; /* Black button */
-    color: #ffffff; /* White text */
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .subscribe button:hover {
-    background-color: #333333; /* Dark grey on hover */
-  }
-  
-  .subscribe .image-content {
-    flex: 1 1 50%;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .subscribe .image-content img {
-    width: 90%;
-    max-width: 400px;
-    border-radius: 50%; /* Circular cropping effect */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-    clip-path: circle(50%); /* Circular clipping */
-    object-fit: cover; /* Maintain aspect ratio */
-  }
+
+
+/* About Section */
+.about {
+  background-color: #ffffff; /* Light grey background */
+  padding: 40px 20px;
+}
+
+.about .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about .image-content {
+  flex: 1 1 50%;
+  text-align: left; /* Align the image to the left */
+}
+
+.about .image-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for the image */
+}
+
+.about .text-content {
+  flex: 1 1 45%;
+  text-align: left; /* Right-aligned text */
+  padding-left: 20px;
+}
+
+.about .text-content h2 {
+  font-size: 2.5rem;
+  font-family: Georgia, serif; /* Georgia font for the heading */
+  color: #000000; /* Black heading color */
+  margin-bottom: 20px;
+}
+
+.about .text-content p {
+  color: #333333; /* Dark grey for paragraph text */
+  margin-bottom: 15px;
+  line-height: 1.8;
+}
+
+
+
+
+
+/* Subscribe Section */
+.subscribe {
+  background-color: #f2f2f2; /* Light grey background */
+  padding: 40px 20px;
+}
+
+.subscribe .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.subscribe .text-content {
+  flex: 1 1 45%;
+  text-align: left;
+}
+
+.subscribe .text-content h2 {
+  font-size: 2.5rem;
+  font-family: Georgia, serif; /* Georgia font for the heading */
+  color: #000000; /* Black heading color */
+  margin-bottom: 20px;
+}
+
+.subscribe .text-content p {
+  color: #333333; /* Dark grey for paragraph text */
+  margin-bottom: 20px;
+  line-height: 1.8;
+}
+
+.subscribe form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.subscribe .form-group {
+  display: flex;
+  gap: 10px;
+}
+
+.subscribe input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.subscribe button {
+  padding: 10px 20px;
+  background-color: #000000; /* Black button */
+  color: #ffffff; /* White text */
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.subscribe button:hover {
+  background-color: #333333; /* Dark grey on hover */
+}
+
+.subscribe .image-content {
+  flex: 1 1 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.subscribe .image-content img {
+  width: 90%;
+  max-width: 400px;
+  border-radius: 50%; /* Circular cropping effect */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  clip-path: circle(50%); /* Circular clipping */
+  object-fit: cover; /* Maintain aspect ratio */
+}
   
   /*User avatar*/
   #userAvatar{
@@ -422,165 +457,171 @@ body {
 
 /* Desktop-specific rules */
 @media (min-width: 769px) {
-  .hamburger-menu {
-      display: none; /* Hidden for larger screens */
-  }
-  .nav {
-      display: flex; /* Show navigation links */
-  }
-  .mobile-nav {
-      display: none; /* Hide mobile navigation */
-  }
+.hamburger-menu {
+    display: none; /* Hidden for larger screens */
+}
+.nav {
+    display: flex; /* Show navigation links */
+}
+.mobile-nav {
+    display: none; /* Hide mobile navigation */
+}
 }
 
 
 @media (max-width: 768px) {
 
-  /* General layout */
+/* General layout */
 
-  .header .container {
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center-align all items */
-    text-align: center; /* Center-align text */
-    gap: 10px; /* Add spacing between elements */
-  }
+.header .container {
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center-align all items */
+  text-align: center; /* Center-align text */
+  gap: 10px; /* Add spacing between elements */
+}
 
-  .header {
-    padding: 10px 20px;
-  }
-  
-  .header-actions {
-    display: flex; 
-    justify-content: center; 
-    gap: 10px;
-    margin-top: 10px;
-  }    
+.header {
+  padding: 10px 20px;
+}
 
+<<<<<<< Updated upstream
   .container, img, nav, .header-actions {
     width: 100%;
     overflow: hidden;
   }
+=======
+.header-actions {
+  display: flex; 
+  justify-content: center; 
+  gap: 10px;
+  margin-top: 10px;
+}    
+>>>>>>> Stashed changes
 
-  .footer .container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
+.container, img, nav, .header-actions {
+  max-width: 100%;
+  overflow: hidden;
+}
 
-  .footer-logo, .footer-links, .footer-social {
-    flex: 1 1 100%;
-    margin-bottom: 20px;
-  }
+.footer .container {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
 
-  .footer-logo img {
-    margin: 0 auto;
-  }   
+.footer-logo, .footer-links, .footer-social, .footer-contact {
+  flex: 1 1 100%;
+  margin-bottom: 20px;
+}
 
-  .footer-logo {
-    order: 3; /* Place this at the bottom */
-    text-align: center;
-    margin-top: 20px;
-  }
+.footer-logo img {
+  margin: 0 auto;
+}   
 
-
-
-  /* hambuger display navbar */
-  .hamburger-menu {
-    display: block; /* Show the hamburger icon */
-  }
-
-  .nav {
-      display: none; /* Hide desktop navigation */
-  }
-
-  .mobile-nav {
-      display: none; /* Default hidden */
-      padding-top: 20px; /* Ensure no overlap between hamburger and home */
-  }
-
-  .mobile-nav.open {
-      display: block; /* Show when active */
-  }
-
-  .mobile-nav ul li a {
-    padding: 15px; /* Ensure sufficient padding for links */
-  }
-
-  body {
-    padding-top: 80px; /* Ensure no overlap with the fixed header */
-  }
+.footer-logo {
+  order: 3; /* Place this at the bottom */
+  text-align: center;
+  margin-top: 20px;
+}
 
 
 
-  /* Section's classes for media*/
+/* hambuger display navbar */
+.hamburger-menu {
+  display: block; /* Show the hamburger icon */
+}
 
-  .greetings .container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 40px 20px;
-  }
-  
-  .greetings .text-content h2 {
-    font-size: 2rem;
-    line-height: 1.4; /* Slightly tighter line height */
-    margin: 15px 0; /* Reduce top and bottom margins */
-  }
+.nav {
+    display: none; /* Hide desktop navigation */
+}
 
-  .greetings .text-content p {
-    margin-bottom: 10px; /* Reduce space below paragraph */
-    padding: 0 15px; /* Maintain consistent horizontal padding */
-  }
+.mobile-nav {
+    display: none; /* Default hidden */
+    padding-top: 20px; /* Ensure no overlap between hamburger and home */
+}
 
-  .greetings .image-content {
-    margin: 20px 0; /* Reduce vertical margin for the image */
-    display: flex;
-    justify-content: center;
-    align-items: center; /* Ensure proper alignment */
-  }
+.mobile-nav.open {
+    display: block; /* Show when active */
+}
 
-  .greetings .image-content img {
-    max-width: 90%; /* Slightly increase the image width */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 8px; /* Adjust border radius for a cleaner look */
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15); /* Subtle shadow */
-  }
+.mobile-nav ul li a {
+  padding: 15px; /* Ensure sufficient padding for links */
+}
 
-  .about .container {
-    flex-direction: column-reverse;
-    text-align: center; /* Center-align text for smaller screens */
-  }
+body {
+  padding-top: 80px; /* Ensure no overlap with the fixed header */
+}
 
-  .about .text-content {
-    padding: 0;
-    text-align: center; /* Center-align text */
-  }
 
-  .about .image-content img {
-    margin-bottom: 20px;
-  }
 
-  .subscribe .container {
-    flex-direction: column;
-    text-align: center;
-  }
+/* Section's classes for media*/
 
-  .subscribe .text-content {
-    text-align: center; /* Center-align text inside the text-content */
-    margin: 0 auto; /* Ensure it centers on the page */
-  }
+.greetings .container {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px;
+}
 
-  .subscribe .image-content {
-    margin-bottom: 20px;
-  }
+.greetings .text-content h2 {
+  font-size: 2rem;
+  line-height: 1.4; /* Slightly tighter line height */
+  margin: 15px 0; /* Reduce top and bottom margins */
+}
 
-  .subscribe form {
-    align-items: center;
-  }
+.greetings .text-content p {
+  margin-bottom: 10px; /* Reduce space below paragraph */
+  padding: 0 15px; /* Maintain consistent horizontal padding */
+}
 
-  .subscribe input {
-    max-width: 90%;
-  }
+.greetings .image-content {
+  margin: 20px 0; /* Reduce vertical margin for the image */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Ensure proper alignment */
+}
+
+.greetings .image-content img {
+  max-width: 90%; /* Slightly increase the image width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Adjust border radius for a cleaner look */
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+}
+
+.about .container {
+  flex-direction: column-reverse;
+  text-align: center; /* Center-align text for smaller screens */
+}
+
+.about .text-content {
+  padding: 0;
+  text-align: center; /* Center-align text */
+}
+
+.about .image-content img {
+  margin-bottom: 20px;
+}
+
+.subscribe .container {
+  flex-direction: column;
+  text-align: center;
+}
+
+.subscribe .text-content {
+  text-align: center; /* Center-align text inside the text-content */
+  margin: 0 auto; /* Ensure it centers on the page */
+}
+
+.subscribe .image-content {
+  margin-bottom: 20px;
+}
+
+.subscribe form {
+  align-items: center;
+}
+
+.subscribe input {
+  max-width: 90%;
+}
 
 }
-  
