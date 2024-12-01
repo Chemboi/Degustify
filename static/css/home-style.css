@@ -80,6 +80,11 @@ body {
   color: #000000;
 }
 
+.header .header-actions{
+  display: flex;
+  gap: 5px;
+}
+
 /* Hamburger Menu */
 .hamburger-menu {
   display: none; /* Hidden by default */
@@ -385,7 +390,32 @@ body {
     object-fit: cover; /* Maintain aspect ratio */
   }
   
-  
+  /*User avatar*/
+  #userAvatar{
+    display: none;
+    background-image: url(../images/user.png);
+    background-size: contain;
+    height: 30px;
+    width: 30px;
+  }
+
+  .signout{
+    display: none;
+    background-color: #000000;
+    position: absolute;
+    left: 100%;
+    width: 75px;
+  }
+
+  #userAvatar-ctn:hover > button {
+    display: inline-block;
+  }
+
+  #userAvatar-ctn{
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
 
 
 
@@ -427,7 +457,7 @@ body {
   }    
 
   .container, img, nav, .header-actions {
-    max-width: 100%;
+    width: 100%;
     overflow: hidden;
   }
 

@@ -1,0 +1,239 @@
+/* General Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+html {
+  height: 100vh;
+}
+
+body {
+  background-color: #f2f2f2;
+
+  /* Light grey for the body background */
+  color: #333333;
+
+  /* Dark grey for text */
+  line-height: 1.6;
+}
+
+/* Header Styles */
+
+.header {
+  background-color: #000000;
+
+  /* Black for the header */
+  color: #ffffff;
+
+  /* White text for contrast */
+  padding: 10px 20px;
+  position: absolute;
+  width: 100vw;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+
+    /* White for the logo */
+  }
+
+  .nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+
+    li a {
+      color: #ffffff;
+
+      /* White for links */
+      text-decoration: none;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: #cccccc;
+
+        /* Lighter grey for hover effect */
+      }
+    }
+  }
+}
+
+.lang-toggle {
+  color: #ffffff;
+  background-color: black;
+  text-decoration: none;
+  border: 1px solid #ffffff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  &:hover {
+    background-color: #ffffff;
+    color: #000000;
+  }
+}
+
+/* Subscribe Section */
+
+.subscribe {
+  background-color: #f2f2f2;
+
+  /* Light grey background */
+
+  .container {
+    display: flex;
+    align-items: center;
+  }
+
+  .text-content {
+    max-width: 400px;
+    width: calc(50vw - 100px);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .text-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .text-content {
+    h2 {
+      font-size: 2rem;
+      font-family: Georgia, serif;
+
+      /* Georgia font for the heading */
+      color: #000000;
+
+      /* Black heading color */
+      margin-bottom: 20px;
+      align-self: center;
+    }
+
+    a {
+      align-self: center;
+      padding-top: 10px;
+      text-decoration: none;
+      color: #666565;
+    }
+
+    #errorMsg {
+      color: rgb(247, 39, 39);
+      background-color: #f5b8b8;
+      border-radius: 5px;
+      padding: 5px 10px;
+      margin-top: 10px;
+      visibility: hidden;
+    }
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .form-group {
+    display: flex;
+    gap: 10px;
+  }
+
+  input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+
+  button {
+    padding: 10px 20px;
+    background-color: #000000;
+
+    /* Black button */
+    color: #ffffff;
+
+    /* White text */
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #333333;
+
+      /* Dark grey on hover */
+    }
+  }
+
+  .container img {
+    object-fit: cover;
+    width: 50vw;
+    max-width: 600px;
+    object-position: center center;
+    height: 100vh;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header {
+    z-index: 2;
+  }
+
+  .subscribe {
+    .container {
+      img {
+        display: none;
+      }
+
+      height: 100vh;
+      background-image: url("../images/vineyard-wine-toast.webp");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        background-color: rgba(255, 252, 252, 0.708);
+      }
+    }
+
+    .text-content {
+      width: 80vw;
+      z-index: 2;
+    }
+
+    form {
+      align-items: center;
+    }
+
+    input {
+      max-width: 90%;
+    }
+  }
+}
