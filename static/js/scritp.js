@@ -1,5 +1,10 @@
 
-  document.getElementById('subscribeForm').addEventListener('submit', function (e) {
+// Differents Script 
+
+// Subscription Form Handling
+const subscribeForm = document.getElementById('subscribeForm');
+if (subscribeForm) {
+  subscribeForm.addEventListener('submit', function (e) {
     e.preventDefault(); // Prevent the form from submitting by default
 
     // Collect form data
@@ -16,21 +21,27 @@
     // Add interactivity (e.g., send data to server or display a success message)
     alert(`Thank you, ${firstName}, for subscribing!`);
   });
+}
 
-  document.addEventListener('DOMContentLoaded', () => {
-    const hamburgerMenu = document.getElementById('hamburgerMenu');
-    const mobileNav = document.getElementById('mobileNav');
-    
+
+
+
+// Mobile Hamburger Menu Handling
+document.addEventListener('DOMContentLoaded', () => {
+  const hamburgerMenu = document.getElementById('hamburgerMenu');
+  const mobileNav = document.getElementById('mobileNav');
+
+  if (hamburgerMenu && mobileNav) {
     // Add click event to the hamburger menu
     hamburgerMenu.addEventListener('click', () => {
-        mobileNav.classList.toggle('open'); // Toggles the mobile navigation menu
+      mobileNav.classList.toggle('open'); // Toggles the mobile navigation menu
     });
 
     // Close menu on link click
-    mobileNav.querySelectorAll('a').forEach(link => {
-        link.addEventListener('click', () => {
-            mobileNav.classList.remove('open');
-        });
+    mobileNav.querySelectorAll('a').forEach((link) => {
+      link.addEventListener('click', () => {
+        mobileNav.classList.remove('open');
+      });
     });
+  }
 });
-
