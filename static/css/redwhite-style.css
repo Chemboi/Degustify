@@ -65,8 +65,8 @@ html {
 }
 
 body {
-  background-color: #f2f2f2; /* Light grey for the body background */
-  color: #333333; /* Dark grey for text */
+  background-color: #f2f2f2; 
+  color: #333333; 
   line-height: 1.6;
   padding-top: calc(60px + 20px);
 }
@@ -100,8 +100,8 @@ img {
 }
 
 .image-content img:hover {
-  transform: scale(1.1); /* Slightly zoom in */
-  filter: brightness(1.2); /* Brighten the image */
+  transform: scale(1.1);
+  filter: brightness(1.2); 
 }
 
 /* Header Styles */
@@ -112,8 +112,8 @@ img {
   left: 0;
   z-index: 1000;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  background-color: #000000; /* Black for the header */
-  color: #ffffff; /* White text for contrast */
+  background-color: #000000; 
+  color: #ffffff; 
   padding: 10px 20px;
 }
 
@@ -128,7 +128,7 @@ img {
 .header .logo {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #ffffff; /* White for the logo */
+  color: #ffffff; 
 }
 
 .header .nav ul {
@@ -138,13 +138,13 @@ img {
 }
 
 .header .nav ul li a {
-  color: #ffffff; /* White for links */
+  color: #ffffff;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .header .nav ul li a:hover {
-  color: #cccccc; /* Lighter grey for hover effect */
+  color: #af363c; 
 }
 
 
@@ -152,7 +152,7 @@ img {
   color: #ffffff;
   text-decoration: none;
   border: 1px solid #ffffff;
-  background-color: black; /* Explicitly set the background color */
+  background-color: black; 
   padding: 5px 10px;
   border-radius: 5px;
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -170,7 +170,7 @@ img {
 
 /* Hamburger Menu */
 .hamburger-menu {
-  display: none; /* Hidden by default */
+  display: none; 
   font-size: 1.5rem;
   cursor: pointer;
   color: white;
@@ -178,7 +178,7 @@ img {
 }
 
 .mobile-nav {
-  display: none; /* Hidden by default */
+  display: none; 
   position: absolute;
   top: 60px;
   left: 0;
@@ -190,7 +190,7 @@ img {
 }
 
 .mobile-nav.open {
-  display: block; /* Show when active */
+  display: block; 
 }
 
 .mobile-nav ul {
@@ -214,11 +214,6 @@ img {
   background-color: #333;
 }
 
-
-
-
-
-
 /* ============================ REUSABLE CSS CLASSES ==================*/
 .container {
   max-width: 1220px;
@@ -233,10 +228,7 @@ img {
 
 .section {
   padding-block: 5rem 1rem;
-  
-
 }
-
 .section__title {
   text-align: center;
   font-size: var(--h1-font-size);
@@ -245,7 +237,7 @@ img {
 }
 
 .main {
-  overflow: hidden; /* for animation scrolling*/
+  overflow: hidden; 
 
   
 }
@@ -304,14 +296,11 @@ img:hover {
 
 /*=================================SERVICES=======================*/
 .services__container {
-  display: grid; /* Switch to grid for more flexibility in layout */
-  row-gap: 3rem; /* Maintain the spacing */
-  z-index: 2; /* Ensure this content is above the background video */
-  position: relative; /* Needed to overlay on the video */
+  display: grid; 
+  row-gap: 3rem; 
+  z-index: 2; 
+  position: relative; 
 }
-
-
-
 .services__card{
   text-align: center;
 }
@@ -334,8 +323,6 @@ img:hover {
   margin: initial;
 }
 
-
-
 .featured__card{
   display:flex;
   flex-direction: row;
@@ -346,13 +333,9 @@ img:hover {
   margin: 5rem;
   border-radius: 10px;
   overflow: hidden;
-  height: 450px; /* set to 450 because some of the images are not a static size */
+  height: 450px; 
   transition: border .9s, background-color .4s;
   box-shadow: 0 10px 10px hsla(15, 72%, 23%, 0.1);
-
-
-
-
 }
 
 .featured__img{
@@ -431,25 +414,9 @@ img:hover {
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   /* Subscribe Section */
 .subscribe {
-    background-color: #f2f2f2; /* Light grey background */
+    background-color: #f2f2f2; 
     padding: 40px 20px;
   }
   
@@ -469,13 +436,13 @@ img:hover {
   
   .subscribe .text-content h2 {
     font-size: 2.5rem;
-    font-family: Georgia, serif; /* Georgia font for the heading */
-    color: #000000; /* Black heading color */
+    font-family: Georgia, serif; 
+    color: #000000; 
     margin-bottom: 20px;
   }
   
   .subscribe .text-content p {
-    color: #333333; /* Dark grey for paragraph text */
+    color: #333333;
     margin-bottom: 20px;
     line-height: 1.8;
   }
@@ -501,8 +468,8 @@ img:hover {
   
   .subscribe button {
     padding: 10px 20px;
-    background-color: #000000; /* Black button */
-    color: #ffffff; /* White text */
+    background-color: #000000; 
+    color: #ffffff; 
     border: none;
     border-radius: 5px;
     font-size: 1rem;
@@ -511,7 +478,7 @@ img:hover {
   }
   
   .subscribe button:hover {
-    background-color: #333333; /* Dark grey on hover */
+    background-color: #333333; 
   }
   
   .subscribe .image-content {
@@ -529,7 +496,6 @@ img:hover {
     object-fit: cover; 
   }
   
-
 .footer {
     background-color: #ffffff; 
     padding: 40px 20px;
@@ -583,12 +549,12 @@ img:hover {
   
   .footer-links ul li a, .footer-social ul li a {
     text-decoration: none;
-    color: #333333; /* Dark grey for links */
+    color: #333333; 
     transition: color 0.3s ease;
   }
   
   .footer-links ul li a:hover, .footer-social ul li a:hover {
-    color: #0466c8; /* Bright blue for hover effect */
+    color: gainsboro; 
   }
 
 
@@ -616,12 +582,8 @@ img:hover {
 
 /* hambuger display navbar */
 .hamburger-menu {
-  display: block; /* Show the hamburger icon */
+  display: block; 
 }
-
-
-
-
 }
 
 
@@ -633,7 +595,6 @@ img:hover {
   .new__card{
       width: 390px;
   }
-  
 }
 
 @media screen and (min-width: 576px){   
@@ -678,15 +639,11 @@ img:hover {
   }
 
 }
-
-  
-  
   /* Responsive Design */
   @media (max-width: 768px) {
 
-/* hambuger display navbar */
 .hamburger-menu {
-  display: block; /* Show the hamburger icon */
+  display: block; 
 }
 
     .home__container,
@@ -733,12 +690,12 @@ img:hover {
     
      .about .container {
       flex-direction: column-reverse;
-      text-align: center; /* Center-align text for smaller screens */
+      text-align: center;
     }
   
     .about .text-content {
       padding: 0;
-      text-align: center; /* Center-align text */
+      text-align: center; 
     }
   
     .about .image-content img {
@@ -1082,13 +1039,13 @@ img:hover {
 /* Desktop-specific rules */
 @media (min-width: 769px) {
 .hamburger-menu {
-    display:none; /* Hidden for larger screens */
+    display:none; 
 }
 .nav {
-    display: flex; /* Show navigation links */
+    display: flex; 
 }
 .mobile-nav {
-    display: none; /* Hide mobile navigation */
+    display: none; 
 }
 }
 
@@ -1098,10 +1055,10 @@ img:hover {
 /* General layout */
 
 .header .container {
-  flex-direction: column; /* Stack items vertically */
-  align-items: center; /* Center-align all items */
-  text-align: center; /* Center-align text */
-  gap: 10px; /* Add spacing between elements */
+  flex-direction: column; 
+  align-items: center; 
+  text-align: center; 
+  gap: 10px; 
 }
 
 .header {
@@ -1140,7 +1097,7 @@ img:hover {
 }   
 
 .footer-logo {
-  order: 3; /* Place this at the bottom */
+  order: 3;
   text-align: center;
   margin-top: 20px;
 }
@@ -1149,31 +1106,29 @@ img:hover {
 
 /* hambuger display navbar */
 .hamburger-menu {
-  display: block; /* Show the hamburger icon */
+  display: block; 
 }
 
 .nav {
-    display: none; /* Hide desktop navigation */
+    display: none; 
 }
 
 .mobile-nav {
-    display: none; /* Default hidden */
-    padding-top: 20px; /* Ensure no overlap between hamburger and home */
+    display: none; 
+    padding-top: 20px; 
 }
 
 .mobile-nav.open {
-    display: block; /* Show when active */
+    display: block; 
 }
 
 .mobile-nav ul li a {
-  padding: 15px; /* Ensure sufficient padding for links */
+  padding: 15px; 
 }
 
 body {
-  padding-top: 80px; /* Ensure no overlap with the fixed header */
+  padding-top: 80px;
 }
-
-
 
 /* Section's classes for media*/
 
@@ -1186,37 +1141,37 @@ body {
 
 .greetings .text-content h2 {
   font-size: 2rem;
-  line-height: 1.4; /* Slightly tighter line height */
-  margin: 15px 0; /* Reduce top and bottom margins */
+  line-height: 1.4; 
+  margin: 15px 0;
 }
 
 .greetings .text-content p {
-  margin-bottom: 10px; /* Reduce space below paragraph */
-  padding: 0 15px; /* Maintain consistent horizontal padding */
+  margin-bottom: 10px;
+  padding: 0 15px; 
 }
 
 .greetings .image-content {
-  margin: 20px 0; /* Reduce vertical margin for the image */
+  margin: 20px 0;
   display: flex;
   justify-content: center;
-  align-items: center; /* Ensure proper alignment */
+  align-items: center; 
 }
 
 .greetings .image-content img {
-  max-width: 90%; /* Slightly increase the image width */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 8px; /* Adjust border radius for a cleaner look */
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+  max-width: 90%; 
+  height: auto; 
+  border-radius: 8px; 
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15); 
 }
 
 .about .container {
   flex-direction: column-reverse;
-  text-align: center; /* Center-align text for smaller screens */
+  text-align: center; 
 }
 
 .about .text-content {
   padding: 0;
-  text-align: center; /* Center-align text */
+  text-align: center;
 }
 
 .about .image-content img {
@@ -1229,8 +1184,8 @@ body {
 }
 
 .subscribe .text-content {
-  text-align: center; /* Center-align text inside the text-content */
-  margin: 0 auto; /* Ensure it centers on the page */
+  text-align: center; 
+  margin: 0 auto; 
 }
 
 .subscribe .image-content {
