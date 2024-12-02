@@ -163,7 +163,6 @@ img {
   color: #000000;
 }
 
-
 /* Hamburger Menu */
 .hamburger-menu {
   display: none; /* Hidden by default */
@@ -208,10 +207,6 @@ img {
 
 .mobile-nav ul li a:hover {
   background-color: #333;
-}
-
-.mobile-nav ul li a::after{
-  color: #0466c8;
 }
 
 
@@ -1132,4 +1127,204 @@ img:hover {
   .swiper__description__list {
       font-size: 14px;
   }
+}
+
+
+
+  /*User avatar*/
+  #userAvatar{
+    display: none;
+    background-image: url(../images/user.png);
+    background-size: contain;
+    height: 30px;
+    width: 30px;
+  }
+
+  .signout{
+    display: none;
+    background-color: #000000;
+    position: absolute;
+    left: 100%;
+    width: 75px;
+  }
+
+  #userAvatar-ctn:hover > button {
+    display: inline-block;
+  }
+
+  #userAvatar-ctn{
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+
+
+
+/* Desktop-specific rules */
+@media (min-width: 769px) {
+.hamburger-menu {
+    display: none; /* Hidden for larger screens */
+}
+.nav {
+    display: flex; /* Show navigation links */
+}
+.mobile-nav {
+    display: none; /* Hide mobile navigation */
+}
+}
+
+
+@media (max-width: 768px) {
+
+/* General layout */
+
+.header .container {
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center-align all items */
+  text-align: center; /* Center-align text */
+  gap: 10px; /* Add spacing between elements */
+}
+
+.header {
+  padding: 10px 20px;
+}
+
+  .container, img, nav, .header-actions {
+    width: 100%;
+    overflow: hidden;
+  }
+.header-actions {
+  display: flex; 
+  justify-content: center; 
+  gap: 10px;
+  margin-top: 10px;
+}    
+
+.container, img, nav, .header-actions {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.footer .container {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-logo, .footer-links, .footer-social, .footer-contact {
+  flex: 1 1 100%;
+  margin-bottom: 20px;
+}
+
+.footer-logo img {
+  margin: 0 auto;
+}   
+
+.footer-logo {
+  order: 3; /* Place this at the bottom */
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+
+/* hambuger display navbar */
+.hamburger-menu {
+  display: block; /* Show the hamburger icon */
+}
+
+.nav {
+    display: none; /* Hide desktop navigation */
+}
+
+.mobile-nav {
+    display: none; /* Default hidden */
+    padding-top: 20px; /* Ensure no overlap between hamburger and home */
+}
+
+.mobile-nav.open {
+    display: block; /* Show when active */
+}
+
+.mobile-nav ul li a {
+  padding: 15px; /* Ensure sufficient padding for links */
+}
+
+body {
+  padding-top: 80px; /* Ensure no overlap with the fixed header */
+}
+
+
+
+/* Section's classes for media*/
+
+.greetings .container {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.greetings .text-content h2 {
+  font-size: 2rem;
+  line-height: 1.4; /* Slightly tighter line height */
+  margin: 15px 0; /* Reduce top and bottom margins */
+}
+
+.greetings .text-content p {
+  margin-bottom: 10px; /* Reduce space below paragraph */
+  padding: 0 15px; /* Maintain consistent horizontal padding */
+}
+
+.greetings .image-content {
+  margin: 20px 0; /* Reduce vertical margin for the image */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Ensure proper alignment */
+}
+
+.greetings .image-content img {
+  max-width: 90%; /* Slightly increase the image width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Adjust border radius for a cleaner look */
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+}
+
+.about .container {
+  flex-direction: column-reverse;
+  text-align: center; /* Center-align text for smaller screens */
+}
+
+.about .text-content {
+  padding: 0;
+  text-align: center; /* Center-align text */
+}
+
+.about .image-content img {
+  margin-bottom: 20px;
+}
+
+.subscribe .container {
+  flex-direction: column;
+  text-align: center;
+}
+
+.subscribe .text-content {
+  text-align: center; /* Center-align text inside the text-content */
+  margin: 0 auto; /* Ensure it centers on the page */
+}
+
+.subscribe .image-content {
+  margin-bottom: 20px;
+}
+
+.subscribe form {
+  align-items: center;
+}
+
+.subscribe input {
+  max-width: 90%;
+}
+
 }
