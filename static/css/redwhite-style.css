@@ -1082,7 +1082,7 @@ img:hover {
 /* Desktop-specific rules */
 @media (min-width: 769px) {
 .hamburger-menu {
-    display:block; /* Hidden for larger screens */
+    display:none; /* Hidden for larger screens */
 }
 .nav {
     display: flex; /* Show navigation links */
