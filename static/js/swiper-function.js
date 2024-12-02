@@ -5,14 +5,19 @@
 
 const swiperHome = new Swiper('.home__swiper', {
     loop: true,
-    spaceBetween: -24,
+    spaceBetween: 10,
     grabCursor: true,
     slidesPerView: 'auto',
     centeredSlides: true,
+    speed:1000,
+    effect: 'slide',
+    easing:'ease-in-out',
+  
 
     autoplay: {
         delay: 3000,
-        disableOnInteraction: false,
+        disableOnInteraction: false, 
+    
     },
 
     breakpoints: {

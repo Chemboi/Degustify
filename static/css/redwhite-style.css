@@ -56,22 +56,20 @@
 html {
   scroll-behavior: smooth;
 }
-body,
-input,
-button {
-  font-family: var(--body-font);
-  font-size: var(--normal-font-size);
-
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
 }
 
 body {
-  background-color: var(--body-color);
-  color: var(--text-color);
-  transition: background-color .4s;
-  height:4000px;
-  overflow-y: scroll;
+  background-color: #f2f2f2; /* Light grey for the body background */
+  color: #333333; /* Dark grey for text */
+  line-height: 1.6;
+  padding-top: calc(60px + 20px);
 }
-
 input,
 button {
   border:none;
@@ -101,60 +99,227 @@ img {
 
 }
 
-.header {
+.image-content img:hover {
+  transform: scale(1.1); /* Slightly zoom in */
+  filter: brightness(1.2); /* Brighten the image */
+}
 
-    background-color: #000000; 
-    color: #ffffff; 
-    padding: 10px 20px;
-    width: 100%;
-    position: fixed;
-    z-index: var(--z-fixed);
-  }
-  
-  .header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    margin: 0 auto;
-  }
-  
-  .header .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #ffffff; /* White for the logo */
-  }
-  
-  .header .nav ul {
-    display: flex;
-    list-style: none;
-    gap: 20px;
-  }
-  
-  .header .nav ul li a {
-    color: #ffffff; /* White for links */
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  
-  .header .nav ul li a:hover {
-    color: #cccccc; /* Lighter grey for hover effect */
-  }
-  
-  .header .login {
-    color: #ffffff;
-    text-decoration: none;
-    border: 1px solid #ffffff;
-    padding: 5px 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
-  
-  .header .login:hover {
-    background-color: #ffffff;
-    color: #000000;
-  }
-  
+/* Header Styles */
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  background-color: #000000; /* Black for the header */
+  color: #ffffff; /* White text for contrast */
+  padding: 10px 20px;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff; /* White for the logo */
+}
+
+.header .nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.header .nav ul li a {
+  color: #ffffff; /* White for links */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.header .nav ul li a:hover {
+  color: #cccccc; /* Lighter grey for hover effect */
+}
+
+
+.header .login, .header .lang-toggle {
+  color: #ffffff;
+  text-decoration: none;
+  border: 1px solid #ffffff;
+  background-color: black; /* Explicitly set the background color */
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.header .login:hover, .header .lang-toggle:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+
+/* Hamburger Menu */
+.hamburger-menu {
+  display: none; /* Hidden by default */
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: white;
+  z-index: 1001;
+}
+
+.mobile-nav {
+  display: none; /* Hidden by default */
+  position: absolute;
+  top: 60px;
+  left: 0;
+  background-color: #000;
+  width: 100%;
+  text-align: center;
+  z-index: 1000;
+  padding: 10px 0;
+}
+
+.mobile-nav.open {
+  display: block; /* Show when active */
+}
+
+.mobile-nav ul {
+  list-style: none;
+  padding-top: 20px;
+  margin: 0;
+}
+
+.mobile-nav ul li {
+  border-bottom: 1px solid #333;
+}
+
+.mobile-nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+}
+
+.mobile-nav ul li a:hover {
+  background-color: #333;
+}
+
+.mobile-nav ul li a::after{
+  color: #0466c8;
+}
+
+
+
+/* Header Styles */
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  background-color: #000000; /* Black for the header */
+  color: #ffffff; /* White text for contrast */
+  padding: 10px 20px;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff; /* White for the logo */
+}
+
+.header .nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.header .nav ul li a {
+  color: #ffffff; /* White for links */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.header .nav ul li a:hover {
+  color: #cccccc; /* Lighter grey for hover effect */
+}
+
+.header .login, .header .lang-toggle {
+  color: #ffffff;
+  text-decoration: none;
+  border: 1px solid #ffffff;
+  background-color: black; /* Explicitly set the background color */
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.header .login:hover, .header .lang-toggle:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Hamburger Menu */
+.hamburger-menu {
+  display: none; /* Hidden by default */
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: white;
+  z-index: 1001;
+}
+
+.mobile-nav {
+  display: none; /* Hidden by default */
+  position: absolute;
+  top: 60px;
+  left: 0;
+  background-color: #000;
+  width: 100%;
+  text-align: center;
+  z-index: 1000;
+  padding: 10px 0;
+}
+
+.mobile-nav.open {
+  display: block; /* Show when active */
+}
+
+.mobile-nav ul {
+  list-style: none;
+  padding-top: 20px;
+  margin: 0;
+}
+
+.mobile-nav ul li {
+  border-bottom: 1px solid #333;
+}
+
+.mobile-nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+}
+
+.mobile-nav ul li a:hover {
+  background-color: #333;
+}
+
 
 /* ============================ REUSABLE CSS CLASSES ==================*/
 .container {
@@ -202,33 +367,35 @@ img {
 
 .home__title{
   font-size: var(--biggest-font-size);
-  margin-bottom: 1rem;
+  margin-bottom: .5rem;
+  font-weight: bold;
+  
 }
-.home__description{
-  margin-bottom:2rem;
+.homedescription{
+  margin-bottom:1rem;
 }
 
 
 .home__images{
   display: grid;
-  transition: transform 0.3s ease, filter 0.3s ease; /* Smooth transition for hover effects */
+     
 }
 
 .home__article,
 img {
   width: 220px;
-  transition: scale 10s;
+  transition: transform .1s ease-out;
+ 
+
   
   
 }
 .home__article 
 img:hover {
   width: 220px;
-  transition: scale 10s;
-  transition-delay: .5s;
-  transform: scale(2.5); /* Slightly zoom in */
-  
-  
+  transition: transform .5s ease-in-out;
+  transform: scale(2.5); 
+
 }
 
 .home__article {
@@ -457,24 +624,18 @@ img:hover {
   .subscribe .image-content img {
     width: 90%;
     max-width: 400px;
-    border-radius: 50%; /* Circular cropping effect */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-    clip-path: circle(50%); /* Circular clipping */
-    object-fit: cover; /* Maintain aspect ratio */
+    border-radius: 50%; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+    clip-path: circle(50%); 
+    object-fit: cover; 
   }
   
-  
 
-
-
-
-
-  /* Footer Section */
 .footer {
-    background-color: #ffffff; /* White background for footer */
+    background-color: #ffffff; 
     padding: 40px 20px;
-    border-top: 1px solid #e6e6e6; /* Subtle border at the top */
-    color: #333333; /* Dark grey text */
+    border-top: 1px solid #e6e6e6; 
+    color: #333333; 
   }
   
   .footer .container {
@@ -493,7 +654,7 @@ img:hover {
   
   .footer-logo h2 {
     font-size: 1.8rem;
-    font-family: Georgia, serif; /* Georgia font for the logo */
+    font-family: Georgia, serif; 
     margin-bottom: 15px;
   }
   
@@ -820,55 +981,12 @@ img:hover {
 
 
 
-
-
-/* ======================= Description and Carrosell =================*/
-#container {
-  width: 100%; /* Ensure the container spans the full width */
-}
-
-.main {
-  display: row;
-  flex-direction: row; /* Arrange children in a row */
-}
-  
-
-.description {
-  font-size: 1.5rem;
-  width: auto;
-
-  color: #333;
-  
-}
-
-.carousel {
-  flex: 1; /* Make the carousel take up one part of the available space */
-
-  width: 100px;
-
-}
-
-.carousel-item.active{
-  flex-direction: row;
-  margin: 0 100px 0 0;
-}
-
-.carousel img {
-  max-width: 50px; /* Ensure image scales within its container */
-  height: 200px; /* Maintain aspect ratio */
- 
-}
-
 /*============================Service cards ==============================*/
 
 .services__container{
   column-gap:10rem;
   padding: 10rem;
- 
-
 }
-
-
 
 .services__card i{
   font-size: 3.5rem;
@@ -945,7 +1063,7 @@ img:hover {
 
 .swiper__description {
   z-index: 10;
-  margin-top: 5px;
+  margin-top: 50px;
   background-color: rgba(255, 255, 255, 0.8); 
   padding: 15px;
   border-radius: 8px; 
