@@ -4,36 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vineyards</title>
+    <meta name="description" content="Vineyards of Quebec">
+    <meta name="keywords" content="Wine, Vineyard, Quebec, Drink, Red">
     <link rel="stylesheet" href="../static/css/vineyards-style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
-
+    <!-- Bootstrap, used for images -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
 </head>
+
 <body>
-        <!-- Header Section -->
-    <header class="header">
-        <div class="container">
-        <h1 class="logo">Degustify</h1>
-        <nav class="nav">
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="redwine.html">Red Wines</a></li>
-                <li><a href="whitewine.html">White Wines</a></li>
-                <li><a href="vineyards.html">Vineyards</a></li>
-                <li><a href="events.html">Events comming soon</a></li>
-            </ul>
-        </nav>
-        <a href="#login" class="login">Login</a>
+  <!-- Header Section -->
+  <header class="header">
+    <div class="container"> <!-- For good layout, all this needs to be in the container div -->
+
+      <h1 class="logo" data-key="title">Degustify</h1> <!-- Title of the Website's page -->
+      
+      <!-- Class for the hamburger nav -->
+      <div class="hamburger-menu" id="hamburgerMenu">☰</div>
+
+      <!-- Class for the mobile view nav -->
+      <div class="mobile-nav" id="mobileNav">
+          <ul>
+              <li><a href="home.html" data-key="home">Home</a></li>
+              <li><a href="redwine.html" data-key="redWine">Red Wines</a></li>
+              <li><a href="whitewine.html" data-key="whiteWine">White Wines</a></li>
+              <li><a href="vineyards.html" data-key="vineyards">Vineyards</a></li>
+              <li><a href="events.html" data-key="events">Events</a></li>
+          </ul>
+      </div>
+
+      <!-- Class for the PC view nav -->
+      <nav class="nav">
+        <ul>
+          <li><a href="home.html" data-key="home">Home</a></li>
+          <li><a href="redwine.html" data-key="redWine">Red Wines</a></li>
+          <li><a href="whitewine.html" data-key="whiteWine">White Wines</a></li>
+          <li><a href="vineyards.html" data-key="vineyards">Vineyards</a></li>
+          <li><a href="events.html" data-key="events">Events</a></li>
+        </ul>
+      </nav>
+
+       <!-- Class for Login and Fr-En buttons -->
+      <div class="header-actions">
+        <a href="login.html" class="login" data-key="login">Login</a>
+        <div id="userAvatar-ctn">
+          <span id="userAvatar"></span>
         </div>
-    </header>
+      </div>
+
+    </div> <!-- End of container div -->
+  </header>
 
     <main>
         <!-- Map and buttons Section -->
         <section class="vineyard-map">
             <div class="map">
                 <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1oKkwU6ordkG3pIBrE9bknM5R6ql0P_o&ehbc=2E312F&noprof=1"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
             </div>
         
@@ -61,31 +89,31 @@
                 <div class="image-content">
                     <div class="thumbnail">
                         <img
-                          src="../static/images/vinyards/Orpailleur1.jpg"
-                          alt="L'Orpailleur wine field"
-                          data-bs-toggle="modal"
-                          data-bs-target="#imageModal"
-                          data-large="../static/images/vinyards/Orpailleur1.jpg"
+                            src="../static/images/vinyards/Orpailleur1.jpg"
+                            alt="L'Orpailleur wine field"
+                            data-bs-toggle="modal"
+                            data-bs-target="#imageModal"
+                            data-large="../static/images/vinyards/Orpailleur1.jpg"
                         >
                       </div>
-                      <div class="thumbnail">
+                    <div class="thumbnail">
                         <img
-                          src="../static/images/vinyards/Orpailleur2.jpg"
-                          alt="L'Orpailleur product"
-                          data-bs-toggle="modal"
-                          data-bs-target="#imageModal"
-                          data-large="../static/images/vinyards/Orpailleur2.jpg"
+                            src="../static/images/vinyards/Orpailleur2.jpg"
+                            alt="L'Orpailleur product"
+                            data-bs-toggle="modal"
+                            data-bs-target="#imageModal"
+                            data-large="../static/images/vinyards/Orpailleur2.jpg"
                         >
-                      </div>
-                      <div class="thumbnail">
+                    </div>
+                    <div class="thumbnail">
                         <img
-                          src="../static/images/vinyards/Orpailleur3.jpg"
-                          alt="L'Orpailleur grapes"
-                          data-bs-toggle="modal"
-                          data-bs-target="#imageModal"
-                          data-large="../static/images/vinyards/Orpailleur3.jpg"
+                            src="../static/images/vinyards/Orpailleur3.jpg"
+                            alt="L'Orpailleur grapes"
+                            data-bs-toggle="modal"
+                            data-bs-target="#imageModal"
+                            data-large="../static/images/vinyards/Orpailleur3.jpg"
                         >
-                      </div>
+                    </div>
                 </div>
 
             </article>
@@ -102,29 +130,29 @@
                 <div class="image-content">
                     <div class="thumbnail">
                         <img
-                          src="../static/images/vinyards/petronille1.jpg"
-                          alt="Ste-Pétronille product"
-                          data-bs-toggle="modal"
-                          data-bs-target="#imageModal"
-                          data-large="../static/images/vinyards/petronille1.jpg"
+                            src="../static/images/vinyards/petronille1.jpg"
+                            alt="Ste-Pétronille product"
+                            data-bs-toggle="modal"
+                            data-bs-target="#imageModal"
+                            data-large="../static/images/vinyards/petronille1.jpg"
                         >
                     </div>
                     <div class="thumbnail">
                         <img
-                          src="../static/images/vinyards/petronille2.jpg"
-                          alt="Ste-Pétronille family"
-                          data-bs-toggle="modal"
-                          data-bs-target="#imageModal"
-                          data-large="../static/images/vinyards/petronille2.jpg"
+                            src="../static/images/vinyards/petronille2.jpg"
+                            alt="Ste-Pétronille family"
+                            data-bs-toggle="modal"
+                            data-bs-target="#imageModal"
+                            data-large="../static/images/vinyards/petronille2.jpg"
                         >
                     </div>
                     <div class="thumbnail">
                         <img
-                          src="../static/images/vinyards/petronille3.jpg"
-                          alt="Ste-Pétronille field"
-                          data-bs-toggle="modal"
-                          data-bs-target="#imageModal"
-                          data-large="../static/images/vinyards/petronille3.jpg"
+                            src="../static/images/vinyards/petronille3.jpg"
+                            alt="Ste-Pétronille field"
+                            data-bs-toggle="modal"
+                            data-bs-target="#imageModal"
+                            data-large="../static/images/vinyards/petronille3.jpg"
                         >
                     </div>
                 </div>
@@ -142,11 +170,11 @@
                 <div class="image-content">
                     <div class="thumbnail">
                         <img
-                          src="../static/images/vinyards/ardoise11.jpg"
-                          alt="Cotes d'Ardoise sign"
-                          data-bs-toggle="modal"
-                          data-bs-target="#imageModal"
-                          data-large="../static/images/vinyards/ardoise1.jpeg"
+                            src="../static/images/vinyards/ardoise11.jpg"
+                            alt="Cotes d'Ardoise sign"
+                            data-bs-toggle="modal"
+                            data-bs-target="#imageModal"
+                            data-large="../static/images/vinyards/ardoise1.jpeg"
                         >
                     </div>    
                     <div class="thumbnail">
@@ -155,7 +183,7 @@
                             alt="Cotes d'Ardoise field"
                             data-bs-toggle="modal"
                             data-bs-target="#imageModal"
-                            data-large="../static/images/vinyards/ardoise21.jpg"
+                            data-large="../static/images/vinyards/ardoise2.jpg"
                         >
                     </div>    
                     <div class="thumbnail">
@@ -164,13 +192,14 @@
                             alt="Cotes d'Ardoise product"
                             data-bs-toggle="modal"
                             data-bs-target="#imageModal"
-                            data-large="../static/images/vinyards/ardoise31.jpg"
+                            data-large="../static/images/vinyards/ardoise3.jpg"
                         >
                     </div>
                 </div>
             </article>
-            <!-- Modal -->
-            <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+
+            <!-- Modal, pop-up -->
+            <div class="modal fade" id="imageModal" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-body p-0">
@@ -184,98 +213,80 @@
             </div>
         </section>
 
-        <section class="vineyard">
-            <div class="contact-section">
-                <h2>For collaborations, please contact Us</h2>
-                <p>If you are a wine producer and would like to feature your vineyard on our website and newsletter, 
-                    please provide your contact information below. We'll reach out to you as soon as possible.</p>
-                
-                <form id="contactForm">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Enter your name" required>
-            
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email" required>
-            
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="4" placeholder="Enter your message"></textarea>
-            
-                <button type="submit">Submit</button>
-                </form>
-            
-                <div class="success-message" id="successMessage">
-                Thank you! Your message has been sent.
-                </div>
-            </div>
-        </section>
     </main>
 
 
 
-    <footer class="footer">
-        <div class="container">
-        <!-- Logo and Éduc'alcool -->
-        <div class="footer-logo">
-            <h2>Degustify</h2>
-            <img src="https://i.ibb.co/RCV6JSx/moderation.png" alt="Éduc'alcool moderation message">
-        </div>
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="container"><!-- Again, all this needs to be in the container div -->
 
-        <!-- Navigation Links -->
-        <div class="footer-links">
-            <h3>Explore</h3>
-            <ul>
-            <li><a href="#red-wines">Red wines</a></li>
-            <li><a href="#white-wines">White wines</a></li>
-            <li><a href="vineyards.html">Vineyards</a></li>
-            <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
+      <!-- Logo and Éduc'alcool -->
+      <div class="footer-logo">
+        <h2 data-key="title">Degustify</h2>
+        <img src="https://i.ibb.co/QCQX4mg/moderation2.png" alt="Éduc'alcool moderation message">
+      </div>
 
-        <!-- Social Links -->
-        <div class="footer-social">
-            <h3>Follow us</h3>
-            <ul>
-            <li><a href="mailto:info@degustify.com">Email</a></li>
-            <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
-            <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
-            </ul>
-        </div>
-        </div>
-    </footer>
+      <!-- Navigation Links -->
+      <div class="footer-links">
+        <h3 data-key="explore">Explore</h3>
+        <ul>
+          <li><a href="home.html" data-key="home">Home</a></li>
+          <li><a href="#red-wines" data-key="redWine">Red Wines</a></li>
+          <li><a href="#white-wines" data-key="whiteWine">White Wines</a></li>
+          <li><a href="vineyards.html" data-key="vineyards">Vineyards</a></li>
+          <li><a href="events.html" data-key="events">Events</a></li>
+        </ul>
+      </div>
 
+      <!-- Social Links -->
+      <div class="footer-social">
+        <h3 data-key="followUs">Follow Us</h3>
+        <ul>
+          <li><a href="mailto:info@degustify.com" data-key="emailUs">Email</a></li>
+          <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+          <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="footer-contact">
+        <h3 data-key="contactUs">Contact Us</h3>
+        <ul>
+          <li><strong data-key="phone">Phone</strong>: (123) 456-7890</li>
+          <li><strong data-key="email">Email</strong>: contact@degustify.com</li>
+          <li><strong data-key="address">Address</strong>: 123 Wine Street, Quebec, Qc, H3A 0G4</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2024 Degustify. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </div>
+
+  </footer>
+
+
+    
+    <!-- including bootstrap, using it for Modals in the images -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript to handle opening the modal with the correct image -->
     <script>
-        document.getElementById('contactForm').addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent the form from refreshing the page
-    
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const message = document.getElementById('message').value;
-    
-            // Compose the email
-            const mailtoLink = `mailto:javier.gonzalezcruz@mail.mcgill.ca?subject=New Contact Request from ${encodeURIComponent(name)}&body=Name: ${encodeURIComponent(name)}%0AEmail: ${encodeURIComponent(email)}%0AMessage: ${encodeURIComponent(message)}`;
-    
-            // Open the user's email client
-            window.location.href = mailtoLink;
-    
-            // Show success message
-            document.getElementById('successMessage').style.display = 'block';
-    
-            // Clear the form
-            document.getElementById('contactForm').reset();
+        document.querySelectorAll('.thumbnail img').forEach(img => {
+            img.addEventListener('click', function() {
+            const largeImageSrc = this.getAttribute('data-large'); // Get the large image URL
+            const modalImage = document.getElementById('modalImage');
+            modalImage.src = largeImageSrc; // Set the modal image source
         });
-        </script>     
-          <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    // JavaScript to handle opening the modal with the correct image
-    document.querySelectorAll('.thumbnail img').forEach(img => {
-      img.addEventListener('click', function() {
-        const largeImageSrc = this.getAttribute('data-large'); // Get the large image URL
-        const modalImage = document.getElementById('modalImage');
-        modalImage.src = largeImageSrc; // Set the modal image source
-      });
-    });
-  </script>   
+        });
+    
+    </script>   
+    <script src="../static/js/lang-toggle.js"></script>
+    <script src="../static/js/lang.js"></script>
+    <script src="../static/js/scritp.js"></script>
+    <script src="../static/js/login.js" type="module"></script>
+    <script src="../static/js/user-data.js" type="module"></script>
     
 </body>
 </html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Login in page for degustify">
+  <title data-key="title">Degustify</title>
+  <link rel="stylesheet" href="../static/css/login-style.css">
+</head>
+
+<body>
+
+      <!-- Header Section -->
+  <header class="header">
+    <div class="container">
+      <h1 class="logo" data-key="title">Degustify</h1>
+      <nav class="nav">
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="redwine.html">Red Wines</a></li>
+          <li><a href="whitewine.html">White Wines</a></li>
+          <li><a href="vineyards.html">Vineyards</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button id="lang-toggle" class="lang-toggle">Fr</button>
+      </div>
+    </div>
+  </header>
+
+    <!-- Subscribe Section -->
+    <section class="subscribe">
+        <div class="container">
+            <img src="../static/images/vineyard-wine-toast.webp" alt="wine toast">
+            <div class="text-container">
+          <div class="text-content">
+            <h2 data-key="subscribeTitle">Welcome Back</h2>
+            <form id="loginForm">
+              <input type="email" id="username" placeholder="Username" required>
+              <input type="text" id="password" placeholder="password" required>
+              <button id="login-btn" data-key="subscribeButton">Log In</button>
+            </form>
+            <a href="" >Forgot Password?</a>
+            <p id="errorMsg">Your login information is incorrect, please try agian.</p>
+          </div>
+            </div>
+        </div>
+    </section>
+
+      <!-- Scripts -->
+      
+    <script src="../static/js/login.js" type="module"></script>
+    <script src="../static/js/user-data.js" type="module"></script>
+
+</body>
+</html>

@@ -1,3 +1,0 @@
-# Degustify
-
-team project

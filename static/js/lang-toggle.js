@@ -8,7 +8,12 @@ document.addEventListener("DOMContentLoaded", () => {
         elementsToTranslate.forEach((el) => {
             const key = el.getAttribute("data-key");
             if (translations[lang][key]) {
-                el.textContent = translations[lang][key];
+                // Handle input placeholders
+                if (el.tagName === "INPUT") {
+                    el.setAttribute("placeholder", translations[lang][key]);
+                } else {
+                    el.textContent = translations[lang][key];
+                }
             }
         });
         localStorage.setItem("lang", lang); // Save language preference

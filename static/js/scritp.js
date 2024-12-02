@@ -17,42 +17,20 @@
     alert(`Thank you, ${firstName}, for subscribing!`);
   });
 
+  document.addEventListener('DOMContentLoaded', () => {
+    const hamburgerMenu = document.getElementById('hamburgerMenu');
+    const mobileNav = document.getElementById('mobileNav');
+    
+    // Add click event to the hamburger menu
+    hamburgerMenu.addEventListener('click', () => {
+        mobileNav.classList.toggle('open'); // Toggles the mobile navigation menu
+    });
 
-  let swiperHome = new Swiper('.home__swiper', {
-    loop: true,
-    spaceBetween: -24,
-    grabCursor: true,
-    slidesPerView: 'auto',
-    centeredSlides:true,
-
-    autoplay:{
-        delay: 3000,
-        disableOnInteraction: false,
-    },
-
-    breakpoints: {
-        1220: {
-            spaceBetween:-32,
-        }
-
-    }
+    // Close menu on link click
+    mobileNav.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            mobileNav.classList.remove('open');
+        });
+    });
 });
 
-const swiper = new Swiper('.featured__swiper', {
-  slidesPerView: 1,
-  spaceBetween: 20,
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  breakpoints: {
-    640: {
-      slidesPerView: 2,
-      spaceBetween: 20,
-    },
-    1024: {
-      slidesPerView: 3,
-      spaceBetween: 30,
-    },
-  },
-});

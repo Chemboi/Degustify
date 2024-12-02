@@ -8,7 +8,7 @@
 
 
       <!--====================== FAVICON =================-->
-      <link rel="shortcut icon" type="image/x-icon" href="/assests/img/cover1.jpeg" />
+      <link rel="shortcut icon" type="image/x-icon" href="../static/images/grape-removebg-preview.png" />
     
       <!--======================REMIXCONS===================-->
       <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.css" rel="stylesheet"/>
@@ -23,16 +23,34 @@
   <header class="header">
     <div class="container">
       <h1 class="logo">Degustify</h1>
+
+      <div class="hamburger-menu" id="hamburgerMenu">☰</div>
+
+      <div class="mobile-nav" id="mobileNav">
+          <ul>
+              <li><a href="home.html" data-key="home">Home</a></li>
+              <li><a href="redwine.html" data-key="redWine">Red Wines</a></li>
+              <li><a href="whitewine.html" data-key="whiteWine">White Wines</a></li>
+              <li><a href="vineyards.html" data-key="vineyards">Vineyards</a></li>
+              <li><a href="events.html" data-key="events">Events</a></li>
+          </ul>
+      </div>
+      
       <nav class="nav">
         <ul>
-          <li><a href="home.html">Home</a></li>
-          <li><a href="redwine.html">Red Wine</a></li>
-          <li><a href="whitewine.html">White Wines</a></li>
-          <li><a href="vineyards.html">Vineyards</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="home.html" data-key="home">Home</a></li>
+          <li><a href="redwine.html" data-key="redWine">Red Wines</a></li>
+          <li><a href="whitewine.html" data-key="whiteWine">White Wines</a></li>
+          <li><a href="vineyards.html" data-key="vineyards">Vineyards</a></li>
+          <li><a href="events.html" data-key="events">Events</a></li>
+          <li><a href="#contact" data-key="contact">Contact Us</a></li>
         </ul>
       </nav>
-      <a href="#login" class="login">Login</a>
+      <div>
+        <a href="#login" class="login">Login</a>
+        <button id="lang-toggle" class="lang-toggle">Fr</button>
+      </div>
+
     </div>
   </header>
 <body>
@@ -47,31 +65,66 @@
                       Your Favorite Local <em>Red</em> Wines
                   </h1>
                   <p class="homedescription">
-                    Discover excellent white wines made and 
-                    produced in the region of Quebec. We encourage
-                    you to take advantage of our online retail advantage
-                    delivery options. 
+                      Discover excellent white wines made and
+                      produced in the region of Quebec. We encourage
+                      you to take advantage of our online retail
+                      delivery options.
                   </p>
                   <a href="#" class="button">Explore Now</a>
+
+                  <div class="swiper__description">
+      
+                      <table class="swiper__description__list">
+                          <tr>
+                              <td class="label">Product:</td>
+                              <td class="value">Insert Product name</td>
+                          </tr>
+                          <tr class="fixed-height">
+                              <td class="label">Description:</td>
+                              <td class="value">Insert description</td>
+                          </tr>
+                          <tr>
+                              <td class="label">Price:</td>
+                              <td class="value">Insert product price</td>
+                          </tr>
+                          <tr>
+                              <td class="label">Pairings:</td>
+                              <td class="value">Insert Pairings</td>
+                          </tr>
+                      </table>
+
+                  </div>
               </div>
 
               <div class="home__images">
                   <div class="home__swiper swiper">
                       <div class="swiper-wrapper">
-                          <article class="home__article swiper-slide">
-                              <img src="../static/images/les_deux_terre-removebg-preview.png" alt="image" class="home__image">
+                          <article class="home__article swiper-slide"
+                                   data-product="<h3>Valipolicella</h3>"
+                                   data-description="<h6>A bold red wine from Quebec's finest vineyards.</h6>"
+                                   data-price="$19.99"
+                                   data-pairing="Cheese, Red Meat">
+                              
+                              
+                              <img src="../static/images/Valpolicello-removebg-preview.png" alt="image" class="home__image">
                           </article>
 
-                          <article class="home__article swiper-slide">
-                              <img src="../static/images/ripasso-removebg-preview.png" alt="image" class="home__image">                           
+                          <article class="home__article swiper-slide"
+                                    data-product="<h3>655</h3>" 
+                                    data-description="<h6>A bold red wine from Quebec's finest vineyards.</h6>" 
+                                    data-price="$24.99" 
+                                    data-pairings="Pasta, Dark Chocolate">
+                              <img src="../static/images/655-removebg-preview.png" alt="image" class="home__image">                           
                           </article>
 
-                          <article class="home__article swiper-slide">
-                              <img src="../static/images/ripasso-removebg-preview.png" alt="image" class="home__image">   
-                          </article>
 
-                          <article class="home__article swiper-slide">
-                              <img src="../static/images/ripasso-removebg-preview.png" alt="image" class="home__image">   
+
+                          <article class="home__article swiper-slide"
+                                   data-product="Dialogo" 
+                                    data-description="<h6>Smooth and fruity wine.</h6>" 
+                                    data-price="$24.99" 
+                                    data-pairings="Pasta, Dark Chocolate">
+                              <img src="../static/images/Dialogo-removebg-preview.png" alt="image" class="home__image">   
                           </article>
                       </div>       
                   </div>
@@ -118,7 +171,7 @@
           <div class="featured__swiper swiper">
               <div class="swiper-wrapper">
                   <article class="featured__card swiper-slide">
-                      <img src="../static/images/ripasso-removebg-preview.png" alt="image" class="featured__img">
+                      <img src="../static/images/Valpolicello-removebg-preview.png" alt="image" class="featured__img">
 
                         <h2 class="featured__title">Featured Wine</h2>
                         <div class="featured__prices">
@@ -137,7 +190,7 @@
                     </article>
 
                     <article class="featured__card swiper-slide">
-                        <img src="../static/images/ripasso-removebg-preview.png" alt="image" class="featured__img">
+                        <img src="../static/images/655-removebg-preview.png" alt="image" class="featured__img">
 
                         <h2 class="featured__title">Featured Wine</h2>
                         <div class="featured__prices">
@@ -156,7 +209,7 @@
                     </article>
 
                     <article class="featured__card swiper-slide">
-                      <img src="../static/images/ripasso-removebg-preview.png" alt="image" class="featured__img">
+                      <img src="../static/images/Dialogo-removebg-preview.png" alt="image" class="featured__img">
 
                       <h2 class="featured__title">Featured Wine</h2>
                       <div class="featured__prices">
@@ -173,13 +226,11 @@
                       </div>
                       
                   </article>
-
-
                 
                   <article class="featured__card swiper-slide">
-                      <img src="../static/images/ripasso-removebg-preview.png" alt="image" class="featured__img">
+                      <img src="../static/images/Valpolicello-removebg-preview.png" alt="image" class="featured__img">
 
-                      <h2 class="featured__title">Featured Wine</h2>
+                      <h2 class="featured__title">Featured Wine </h2>
                       <div class="featured__prices">
                           <span class="featured__discount">$11.99</span>
                           <span class="featured__price">$19.99</span>
@@ -243,9 +294,9 @@
     <div class="footer-links">
       <h3>Explore</h3>
       <ul>
-        <li><a href="#red-wines">Red wines</a></li>
-        <li><a href="#white-wines">White wines</a></li>
-        <li><a href="#news">News</a></li>
+        <li><a href="redwine.html">Red wines</a></li>
+        <li><a href="whitewine.html">White wines</a></li>
+        <li><a href="events.html">Events</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
@@ -262,6 +313,6 @@
   </div>
 </footer>
 <script src="../static/js/swiper-bundle.min.js"></script>
-<script src="../static/js/scritp.js"></script>
+<script src="../static/js/swiper-function.js"></script>
 </body>
 </html>
