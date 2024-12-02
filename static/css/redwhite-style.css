@@ -295,11 +295,16 @@ img:hover {
 }
 
 /*=================================SERVICES=======================*/
-.services__container {
-  display: grid; 
-  row-gap: 3rem; 
-  z-index: 2; 
-  position: relative; 
+/*============================Service cards ==============================*/
+
+.services__container{
+  column-gap:10rem;
+  padding: 1rem;
+}
+
+
+.services__container{
+  row-gap: 3rem;
 }
 .services__card{
   text-align: center;
@@ -307,7 +312,7 @@ img:hover {
 
 .services__card i {
   display: block;
-  font-size: 3rem;
+  font-size: 5rem;
   color: var(--first-color);
   margin-bottom: 1rem;
 }
@@ -647,7 +652,9 @@ img:hover {
 .hamburger-menu {
   display: block; 
 }
-
+.services__card i {
+  font-size: 3rem;
+}
 
     .home__container,
     .featured__container{
@@ -661,7 +668,7 @@ img:hover {
     .services__container{
         
         justify-content: center;
-        column-gap: 5rem;
+        column-gap: 2rem;
     }
 
     .footer__container{
@@ -780,35 +787,6 @@ img:hover {
 
 
 
-/*============================Service cards ==============================*/
-
-.services__container{
-  column-gap:10rem;
-  padding: 10rem;
-}
-
-.services__card i{
-  font-size: 3.5rem;
-}
-
-.services__container{
-  row-gap: 3rem;
-}
-.services__card{
-  text-align: center;
-}
-
-.services__card i {
-  display: block;
-  font-size: 3rem;
-  color: var(--first-color);
-  margin-bottom: 1rem;
-}
-
-.services__title {
-  font-size: var(--h3-font-size);
-  margin-bottom: .5rem;
-}
 
 
 @media screen and (min-width: 768px){
@@ -1062,53 +1040,6 @@ body {
   padding-top: 80px;
 }
 
-/* Section's classes for media*/
-
-.greetings .container {
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 40px 20px;
-}
-
-.greetings .text-content h2 {
-  font-size: 2rem;
-  line-height: 1.4; 
-  margin: 15px 0;
-}
-
-.greetings .text-content p {
-  margin-bottom: 10px;
-  padding: 0 15px; 
-}
-
-.greetings .image-content {
-  margin: 20px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center; 
-}
-
-.greetings .image-content img {
-  max-width: 90%; 
-  height: auto; 
-  border-radius: 8px; 
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15); 
-}
-
-.about .container {
-  flex-direction: column-reverse;
-  text-align: center; 
-}
-
-.about .text-content {
-  padding: 0;
-  text-align: center;
-}
-
-.about .image-content img {
-  margin-bottom: 20px;
-}
 
 .subscribe .container {
   flex-direction: column;
