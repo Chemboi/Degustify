@@ -610,6 +610,16 @@ img:hover {
         font-size: 7rem;
         width: 800px;
     }
+    .featured__container {
+      justify-content: center;
+    }
+    .featured__card{
+        width: 100px;
+    }
+    .new__card{
+        width: 100px;
+    }
+  }
 
 
 /* hambuger display navbar */
@@ -621,11 +631,14 @@ img:hover {
 
 /* for medium devices */
 @media screen and (min-width: 450px){
+  .featured__container {
+    justify-content: center;
+  }
   .featured__card{
-      width: 290px;
+      width: 200px;
   }
   .new__card{
-      width: 390px;
+      width: 150px;
   }
 }
 
