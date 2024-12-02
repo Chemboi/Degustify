@@ -15,7 +15,7 @@ const translations = {
 
         events: "Events",
 
-        contact: "Contact Us",
+        contactUs: "Contact Us",
 
         login: "Login",
 
@@ -46,6 +46,14 @@ const translations = {
         explore: "Explore",
 
         followUs: "Follow Us",
+
+        contactUs: "Contact Us",
+
+        phone: "Phone",
+
+        email: "Email",
+
+        address: "Address",
     },
 
 
@@ -63,8 +71,6 @@ const translations = {
         vineyards: "Vignobles",
 
         events: "Événements",
-    
-        contact: "Contactez-nous",
     
         login: "Connectez-vous",
     
@@ -93,5 +99,14 @@ const translations = {
         explore: "Explorer",
     
         followUs: "Suivez-nous",
+
+        contactUs: "Contactez-nous",
+
+        phone: "Tél.",
+
+        email: "Courriel",
+        
+        address: "Adresse",
+
     }
 };
