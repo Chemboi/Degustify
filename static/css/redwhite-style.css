@@ -610,16 +610,7 @@ img:hover {
         font-size: 7rem;
         width: 800px;
     }
-    .featured__container {
-      justify-content: center;
-    }
-    .featured__card{
-        width: 100px;
-    }
-    .new__card{
-        width: 100px;
-    }
-  }
+    
 
 
 /* hambuger display navbar */
@@ -635,10 +626,10 @@ img:hover {
     justify-content: center;
   }
   .featured__card{
-      width: 200px;
+      width: 100px;
   }
   .new__card{
-      width: 150px;
+      width: 100px;
   }
 }
 
@@ -656,6 +647,7 @@ img:hover {
 .hamburger-menu {
   display: block; 
 }
+
 
     .home__container,
     .featured__container{
