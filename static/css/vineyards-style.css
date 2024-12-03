@@ -49,7 +49,7 @@ body {
   color: #ffffff; /* White for the logo */
 }
 
-.header .nav ul {
+.header .nav ul { 
   display: flex;
   list-style: none;
   gap: 20px;
@@ -84,6 +84,8 @@ body {
   display: flex;
   gap: 5px;
 }
+
+
 
 /* Hamburger Menu */
 .hamburger-menu {
@@ -134,8 +136,7 @@ body {
 
 
 
-
-  
+ 
   
   /* Footer Section */
 .footer {
@@ -238,52 +239,6 @@ body {
 
 
 
-/* Greetings Section */
-.greetings {
-  background-color: #f2f2f2; /* Light grey background for the greetings section */
-  padding: 40px 20px;
-}
-
-.greetings .container {
-  display: flex; 
-  align-items: center; 
-  justify-content: space-between; 
-  flex-wrap: wrap; /* Allows wrapping for smaller screens */
-  max-width: 1200px;
-  margin: 0 auto;
-  gap: 20px; /* Adds spacing between text and image */
-}
-
-.greetings .text-content {
-  flex: 1 1 50%; /* Ensures text takes 50% of the width on larger screens */
-  max-width: 600px; /* Restrict max width for readability */
-}
-
-.greetings .text-content h2 {
-  font-size: 2.5rem;
-  font-family: Georgia, serif;
-  margin-bottom: 20px;
-  color: #000000; /* Black for the heading */
-}
-
-.greetings .text-content p {
-  margin-bottom: 20px;
-  color: #333333; /* Dark grey for paragraph text */
-}
-
-.greetings .image-content {
-  flex: 1 1 40%; /* Ensures image takes 40% of the width on larger screens */
-  display: flex;
-  justify-content: center; /* Centers the image horizontally */
-  align-items: center; /* Centers the image vertically */
-}
-
-.greetings .image-content img {
-  max-width: 80%; /* Make the image responsive */
-  height: auto; 
-  border-radius: 10px; 
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
-}
 
 
 
@@ -470,6 +425,9 @@ body {
 
 /* General layout */
 
+.map{
+  padding-top: 100px; /* Adjust for the smaller screen, nav bar has more height*/
+}
 .header .container {
   flex-direction: column; /* Stack items vertically */
   align-items: center; /* Center-align all items */
@@ -481,10 +439,10 @@ body {
   padding: 10px 20px;
 }
 
-  .container, img, nav, .header-actions {
-    width: 100%;
-    overflow: hidden;
-  }
+.container, img, nav, .header-actions {
+   width: 100%;
+   overflow: hidden;
+ }
 .header-actions {
   display: flex; 
   justify-content: center; 
@@ -519,14 +477,13 @@ body {
 }
 
 
-
 /* hambuger display navbar */
 .hamburger-menu {
   display: block; /* Show the hamburger icon */
 }
 
 .nav {
-    display: none; /* Hide desktop navigation */
+    display: none !important; /* Hide desktop navigation */
 }
 
 .mobile-nav {
@@ -619,6 +576,21 @@ body {
 }
 
 }
+
+@media (max-width: 912px) {
+  .vineyard{
+    flex-direction: column;
+  }
+ .image-content{
+    align-items: center !important; 
+  }
+ 
+}
+
+
+
+
+
 
 /*Vineyard map and buttons Section */
   /* Map styling */
