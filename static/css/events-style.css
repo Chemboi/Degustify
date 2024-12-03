@@ -233,4 +233,44 @@ body {
       }   
 
   }
+    /*User avatar*/
+    #userAvatar{
+      display: none;
+      background-image: url(../images/user.png);
+      background-size: contain;
+      height: 30px;
+      width: 30px;
+    }
   
+    .signout{
+      display: none;
+      background-color: #000000;
+      position: absolute;
+      left: 100%;
+      width: 75px;
+    }
+  
+    #userAvatar-ctn:hover > button {
+      display: inline-block;
+    }
+  
+    #userAvatar-ctn{
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+  
+.header .login, .header .lang-toggle {
+  color: #ffffff;
+  text-decoration: none;
+  border: 1px solid #ffffff;
+  background-color: black; 
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.header .login:hover, .header .lang-toggle:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
