@@ -16,7 +16,7 @@ const setUserTokenCookie= (userToken) => {
         date.setHours(23)
         date.setMinutes(59)
         date.setSeconds(59)
-        const expires = "; expires=" + date;
+        const expires = "; expires=" + date.toUTCString();
         document.cookie =  "userToken=" + userToken + expires + "; SameSite=Strict Secure";
     }
 }
